@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Coustard";
+  src: url("../assets/font/Coustard-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../assets/font/Quicksand-VariableFont_wght.ttf");
+}
+
+:root {
+  --title-color: #003662;
+  --primary-color: #b9d2e7;
+  --black-font-color: #000000;
+  --white-font-color: #ffffff;
+  --font-family-1: "Coustard";
+  --font-family-2: "Quicksand";
+}
+
+body {
+  background-color: var(--primary-color);
+}
+/* Responsive */
+
+@media (max-width: 560px) {
+  .navbar-brand.ms-3 {
+    display: none;
+  }
+}
