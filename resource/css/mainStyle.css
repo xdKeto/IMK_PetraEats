@@ -20,6 +20,14 @@
 body {
   background-color: var(--primary-color);
 }
+
+.btn-custom:hover {
+  background-color: #295A82;
+  border-color: #295A82 ;
+  transform: 0.3s;
+}
+
+
 /* Responsive */
 
 @media (max-width: 560px) {
