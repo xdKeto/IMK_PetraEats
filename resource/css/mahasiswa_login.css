@@ -2,12 +2,24 @@
   border: 1px solid red
 } */
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("../assets/font/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/font/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 html {
   height: 100%;
 }
 
 body {
   min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .background {
   width: 100%;
@@ -94,10 +106,10 @@ body {
 }
 
 .btn {
-  background-color: #86bbd8;
+  background-color: #0f4068;
   border-radius: 21px;
   border: 1px black solid;
-  color: #272727;
+  color: white;
   font-size: 15px;
   font-family: Inter;
   font-weight: 700;
@@ -105,10 +117,10 @@ body {
 }
 
 .btn:hover {
-  background: #2f4858;
+  background: white;
   border-radius: 21px;
   border: 1px black solid;
-  color: white;
+  color: black;
   font-size: 15px;
   font-family: Inter;
   font-weight: 700;
