@@ -17,7 +17,7 @@ function validateLogin() {
   if (username === "c14220331@john.petra.ac.id" && password === "c14220331") {
     Toast.fire({
       icon: "success",
-      title: "Log in succesful",
+      title: "Sign in succesful",
     });
   } else if(username === "" && password === ""){
     Toast.fire({
