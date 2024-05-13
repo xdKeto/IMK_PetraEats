@@ -6,7 +6,7 @@ function validateLogin() {
     toast: true,
     position: "top-end",
     showConfirmButton: false,
-    timer: 3000,
+    timer: 2000,
     timerProgressBar: true,
     didOpen: (toast) => {
       toast.onmouseenter = Swal.stopTimer;
@@ -19,12 +19,16 @@ function validateLogin() {
       icon: "success",
       title: "Sign in succesful",
     });
-  } else if(username === "" && password === ""){
+
+    setTimeout(function () {
+      window.location = "../mahasiswa/mahasiswa_landing_page.html";
+    }, 1200);
+  } else if (username === "" && password === "") {
     Toast.fire({
-        icon: "info",
-        title: "Enter your username and password",
-      });
-  }else {
+      icon: "info",
+      title: "Enter your username and password",
+    });
+  } else {
     Toast.fire({
       icon: "error",
       title: "Please enter your username and password correctly",
