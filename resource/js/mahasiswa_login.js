@@ -8,10 +8,6 @@ function validateLogin() {
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true,
-    didOpen: (toast) => {
-      toast.onmouseenter = Swal.stopTimer;
-      toast.onmouseleave = Swal.resumeTimer;
-    },
   });
 
   if (username === "c14220331@john.petra.ac.id" && password === "c14220331") {
