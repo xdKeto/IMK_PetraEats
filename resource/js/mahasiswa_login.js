@@ -2,30 +2,64 @@ function validateLogin() {
   var username = document.getElementById("email").value;
   var password = document.getElementById("password").value;
 
-  const Toast = Swal.mixin({
+  const toastSuccess = Swal.mixin({
     toast: true,
-    position: "top-end",
+    position: "top-start",
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true,
+    customClass: {
+      popup: 'custom-toast'
+    },
+    didOpen: (toast) => {
+      toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'green';
+    }
+  });
+
+  const toastError = Swal.mixin({
+    toast: true,
+    position: "top-start",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    customClass: {
+      popup: 'custom-toast'
+    },
+    didOpen: (toast) => {
+      toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'red';
+    }
+  });
+
+  const toastInfo = Swal.mixin({
+    toast: true,
+    position: "top-start",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    customClass: {
+      popup: 'custom-toast'
+    },
+    didOpen: (toast) => {
+      toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'cyan';
+    }
   });
 
   if (username === "c14220331@john.petra.ac.id" && password === "c14220331") {
-    Toast.fire({
+    toastSuccess.fire({
       icon: "success",
-      title: "Sign in succesful",
+      title: "Sign in successful",
     });
 
     setTimeout(function () {
       window.location = "../mahasiswa/mahasiswa_landing_page.html";
     }, 1200);
   } else if (username === "" && password === "") {
-    Toast.fire({
+    toastInfo.fire({
       icon: "info",
       title: "Enter your username and password",
     });
   } else {
-    Toast.fire({
+    toastError.fire({
       icon: "error",
       title: "Please enter your username and password correctly",
     });

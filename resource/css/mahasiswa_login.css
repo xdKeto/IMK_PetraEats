@@ -149,3 +149,7 @@ body {
   max-width: 16%;
   right: 16px;
 }
+
+.custom-toast {
+  margin-left: 50px;
+}
