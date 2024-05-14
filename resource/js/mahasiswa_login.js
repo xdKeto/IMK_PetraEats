@@ -8,9 +8,6 @@ function validateLogin() {
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true,
-    customClass: {
-      popup: 'custom-toast'
-    },
     didOpen: (toast) => {
       toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'green';
     }
@@ -22,9 +19,6 @@ function validateLogin() {
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true,
-    customClass: {
-      popup: 'custom-toast'
-    },
     didOpen: (toast) => {
       toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'red';
     }
@@ -36,9 +30,6 @@ function validateLogin() {
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true,
-    customClass: {
-      popup: 'custom-toast'
-    },
     didOpen: (toast) => {
       toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'cyan';
     }
