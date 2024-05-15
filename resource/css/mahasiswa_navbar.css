@@ -1,1 +1,29 @@
+.navbar {
+    overflow: hidden;
+}
 
+/* Styles for the navbar items */
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: white;
+    animation: growAndShake infinite ease-in 0.6s;
+}
+
+
+@keyframes growAndShake {
+    0% { transform: scale(1.1) rotate(-3deg); }
+    25% { transform: scale(1.1) rotate(3deg); }
+    50% { transform: scale(1.1) rotate(-3deg); }
+    75% { transform: scale(1.1) rotate(3deg); }
+    100% { transform: scale(1.1) rotate(-3deg); }
+}
