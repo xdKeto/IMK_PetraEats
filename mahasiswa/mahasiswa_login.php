@@ -2,7 +2,7 @@
 session_start();
 
 $email = "c14220293@gmail.com";
-$passowrd = "c14220293";
+$password = "c14220293";
 
 if (isset($_POST['emailInput']) && isset($_POST['passwordInput'])) {
     $_email = $_POST['emailInput'];
