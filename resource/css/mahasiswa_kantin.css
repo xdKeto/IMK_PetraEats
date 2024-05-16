@@ -1,10 +1,11 @@
-/* * {
+* {
   border: solid 1px red;
-} */
+}
 
 .nama-kantin {
   font-size: 8rem;
   color: #003662;
+  text-align: center;
 }
 
 .image-container {
@@ -37,7 +38,7 @@
   .nama-kantin {
     font-size: 4rem;
   }
-
+  
   .back-button {
     font-size: 1.1rem;
     /* margin-bottom: 1rem; */
@@ -48,7 +49,7 @@
   .nama-kantin {
     font-size: 5rem;
   }
-
+  
   .back-button {
     /* align-self: flex-start; */
     font-size: 1.2rem;
@@ -59,7 +60,7 @@
   .nama-kantin {
     font-size: 6.5rem;
   }
-
+  
   .back-button {
     align-self: flex-start;
     font-size: 1.5rem;
