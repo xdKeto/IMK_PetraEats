@@ -3,7 +3,7 @@
 } */
 
 .nama-kantin {
-  font-size: 6rem;
+  font-size: 8rem;
   color: #003662;
 }
 
@@ -57,7 +57,7 @@
 
 @media (min-width: 768px) {
   .nama-kantin {
-    font-size: 6rem;
+    font-size: 6.5rem;
   }
 
   .back-button {
@@ -68,12 +68,12 @@
 
 @media (min-width: 992px) {
   .nama-kantin {
-    font-size: 6.5rem;
+    font-size: 7rem;
   }
 }
 
 @media (min-width: 1200px) {
   .nama-kantin {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 }
