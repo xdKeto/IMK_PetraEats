@@ -1,6 +1,6 @@
-* {
+/* * {
   border: solid 1px red;
-}
+} */
 
 .nama-kantin {
   font-size: 8rem;
@@ -69,7 +69,8 @@
 
 @media (min-width: 992px) {
   .nama-kantin {
-    font-size: 7.5rem;
+    font-size: 8rem;
+    padding-right: 270px;
   }
 }
 
