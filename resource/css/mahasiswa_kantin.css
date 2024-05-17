@@ -59,6 +59,7 @@
 @media (min-width: 768px) {
   .nama-kantin {
     font-size: 6.5rem;
+    /* padding-right: 50px; */
   }
   
   .back-button {
@@ -70,12 +71,27 @@
 @media (min-width: 992px) {
   .nama-kantin {
     font-size: 8rem;
-    padding-right: 270px;
+    padding-right: 200px;
   }
 }
 
 @media (min-width: 1200px) {
   .nama-kantin {
+    padding-right: 230px;
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nama-kantin {
+    padding-right: 250px;
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nama-kantin {
+    padding-right: 295px;
     font-size: 8rem;
   }
 }
