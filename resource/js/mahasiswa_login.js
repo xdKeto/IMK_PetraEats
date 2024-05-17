@@ -56,3 +56,25 @@ function validateLogin() {
     });
   }
 }
+
+function confirmLogout () {
+  Swal.fire({
+    title: "Log out?",
+    text: "Apakah anda yakin ingin logout ?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#d33",
+    cancelButtonColor: "#bbbbbb",
+    confirmButtonText: "Iya",
+    cancelButtonText: "Cancel",
+    reverseButtons: true // This option moves the confirm button to the right
+  }).then((result) => {
+    if (result.isConfirmed) {
+      setTimeout(function () {
+        window.location = "../mahasiswa/mahasiswa_login.html";
+      }, 800);
+    }
+  });
+
+  console.log("kntl")
+}
