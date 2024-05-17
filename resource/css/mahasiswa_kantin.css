@@ -41,7 +41,6 @@
   
   .back-button {
     font-size: 1.1rem;
-    /* margin-bottom: 1rem; */
   }
 }
 
@@ -51,7 +50,6 @@
   }
   
   .back-button {
-    /* align-self: flex-start; */
     font-size: 1.2rem;
   }
 }
@@ -59,7 +57,6 @@
 @media (min-width: 768px) {
   .nama-kantin {
     font-size: 6.5rem;
-    /* padding-right: 50px; */
   }
   
   .back-button {
@@ -71,27 +68,27 @@
 @media (min-width: 992px) {
   .nama-kantin {
     font-size: 8rem;
-    padding-right: 200px;
+    padding-right: 115px;
   }
 }
 
 @media (min-width: 1200px) {
   .nama-kantin {
-    padding-right: 230px;
+    padding-right: 145px;
     font-size: 8rem;
   }
 }
 
 @media (min-width: 1400px) {
   .nama-kantin {
-    padding-right: 250px;
+    padding-right: 165px;
     font-size: 8rem;
   }
 }
 
 @media (min-width: 1600px) {
   .nama-kantin {
-    padding-right: 295px;
+    padding-right: 200px;
     font-size: 8rem;
   }
   
