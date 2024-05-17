@@ -23,8 +23,10 @@
       <div class="container-fluid align-items-center row">
         <!-- Brand -->
         <div class="col-lg-5 col-6 ms-lg-5 align-items-center d-flex justify-content-start">
+          <a href="mahasiswa_landing_page.html" style="text-decoration: none;">
           <img src="../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" style="width: 4rem" />
           <span class="navbar-brand ms-3 mb-0 fs-4 text-white" style="font-family: var(--font-family-1)">Petra Eats</span>
+          </a>
         </div>
         <!-- Navbar brand and toggle button -->
         <div class="col-lg-1 col-6">
@@ -39,13 +41,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav col-12 row gap-2 d-flex justify-content-end">
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
-                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)"><i class="fa fa-history" aria-hidden="true"></i> Riwayat</a>
+                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)"  id="navitem" ><i class="fa fa-history"></i> Riwayat</a>
               </li>
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
-                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Keranjang</a>
+                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)"  id="navitem" ><i class="fa fa-shopping-basket"></i> Keranjang</a>
               </li>
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
-                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)">C14220331</a>
+                <div class="dropdown">
+                  <a href="#" class="navbar-brand nav-link mb-0 fs-5 dropbtn" style="font-family: var(--font-family-1)" id="navitem" onclick="logoutDropdown()">C14220331</a>
+                    <div class="dropdown-content" id="name-dropdown">
+                        <a href="mahasiswa_login.html" class="btn btn-danger btn-sm">Logout</a>
+                    </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -138,6 +145,7 @@
 
     <!-- JavaScript -->
     <script type="text/javascript" src="../resource/js/mahasiswa_landing_page.js"></script>
+    <script type="text/javascript" src="../resource/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
