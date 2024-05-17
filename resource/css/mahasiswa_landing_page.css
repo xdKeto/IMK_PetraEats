@@ -16,3 +16,12 @@
   height: 100%;
   object-fit: cover;
 }
+
+a {
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+}
