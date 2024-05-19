@@ -1,0 +1,95 @@
+.nama-toko {
+  color: #003662;
+  text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-custom {
+    background-color: #2F4858; 
+    color: white
+}
+
+/* Back button */
+.back-button {
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 7rem;
+}
+  
+
+/* Responsive */
+@media (max-width: 400px) {
+  .nama-toko {
+    font-size: 2rem;
+  }
+
+  .back-button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .nama-toko {
+    font-size: 2.5rem;
+  }
+
+  .back-button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nama-toko {
+    font-size: 4rem;
+  }
+
+  .back-button {
+    align-self: flex-start;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .nama-toko {
+    font-size: 4rem;
+    padding-right: 115px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nama-toko {
+    padding-right: 145px;
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nama-toko {
+    padding-right: 165px;
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .nama-toko {
+    padding-right: 200px;
+    font-size: 6rem;
+  }
+}
