@@ -75,6 +75,4 @@ function confirmLogout () {
       }, 800);
     }
   });
-
-  console.log("kntl")
 }
