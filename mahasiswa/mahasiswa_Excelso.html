@@ -53,7 +53,9 @@
               </li>
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
                 <div class="dropdown">
-                  <a class="navbar-brand nav-link mb-0 fs-5 dropbtn" style="font-family: var(--font-family-1)" id="navitem" onclick="logoutDropdown()">C14220331</a>
+                  <div class="navbar-brand nav-link mb-0 fs-5 dropbtn d-flex justify-content-center" style="font-family: var(--font-family-1)" id="navitem" onclick="logoutDropdown()">
+                    <img class="rounded-circle dropbtn" style="max-width: 35px" src="../resource/assets/assets_lama/mahasiswa/profile/Default.jpg" style="z-index: 2" />
+                  </div>
                   <div class="dropdown-content rounded-2" id="name-dropdown">
                     <a href="#" class="btn btn-danger btn-sm rounded-2 fw-bold" onclick="confirmLogout()">Logout</a>
                   </div>
@@ -76,109 +78,119 @@
       <!-- Button and Title -->
 
       <!-- MENU -->
-      <div class="row mt-5 d-flex justify-content-center ps-lg-2">
-        <div class="col-lg-6 col-xl-4 col-12 d-flex justify-content-start justify-content-md-center mt-md-0 mt-5 mb-3" style="padding-right: 30px; padding-left: 25px">
-          <div class="row bg-light align-items-center rounded-3 shadow">
+      <div class="row mt-5 d-flex justify-content-center ps-lg-2 gap-sm-0 gap-4">
+        <div class="col-lg-6 col-xl-4 col-12">
+          <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
             <div class="col-6 p-2">
-              <img src="..\resource\assets\assets_lama\foods\excelso1.jpg" class="card-img-top rounded-2" />
+              <img src="..\resource\assets\assets_lama\foods\excelso1.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Cookies and Cream</h4>
-              <p class="">Iced blended cookies and cream</p>
-              <p class="">Rp. 25.000</p>
-              <div class="row d-flex justify-content-start" style="padding-left: 12px; padding-right: 12px">
+            <div class="col-6 mt-4 pb-3">
+              <div style="height: 12rem">
+                <h4 class="">Cookies and Cream</h4>
+                <p class="">Iced blended cookies and cream</p>
+                <p class="">Rp. 25.000</p>
+              </div>
+              <div class="row d-flex justify-content-start align-items-center" style="padding-left: 12px; padding-right: 12px">
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-minus" data-id="1" style="width: 3rem">-</button>
-                <div id="counter-1" class="fw-bold col-4" style="text-align: center"><p>0</p></div>
+                <div id="counter-1" class="fw-bold col-4 food-counter align-items-center" style="text-align: center">0</div>
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-plus" data-id="1" style="width: 3rem">+</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6 col-xl-4 col-12 d-flex justify-content-start justify-content-md-center mt-md-0 mt-5 mb-3" style="padding-right: 30px; padding-left: 25px">
-          <div class="row bg-light align-items-center rounded-3 shadow">
+        <div class="col-lg-6 col-xl-4 col-12">
+          <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
             <div class="col-6 p-2">
-              <img src="..\resource\assets\assets_lama\foods\excelso2.jpg" class="card-img-top rounded-2" />
+              <img src="..\resource\assets\assets_lama\foods\excelso2.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Choco Chip</h4>
-              <p class="">Minuman coklat dengan topping choco chip</p>
-              <p class="">Rp. 27.000</p>
-              <div class="row d-flex justify-content-start" style="padding-left: 12px; padding-right: 12px">
+            <div class="col-6 mt-4 pb-3">
+              <div style="height: 12rem">
+                <h4 class="">Choco Chip</h4>
+                <p class="">Minuman coklat dengan topping choco chip</p>
+                <p class="">Rp. 27.000</p>
+              </div>
+              <div class="row d-flex justify-content-start align-items-center" style="padding-left: 12px; padding-right: 12px">
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-minus" data-id="1" style="width: 3rem">-</button>
-                <div id="counter-2" class="fw-bold col-4" style="text-align: center"><p>0</p></div>
+                <div id="counter-2" class="fw-bold col-4 food-counter align-items-center" style="text-align: center">0</div>
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-plus" data-id="1" style="width: 3rem">+</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6 col-xl-4 col-12 d-flex justify-content-start justify-content-md-center mt-md-0 mt-5 mb-3" style="padding-right: 30px; padding-left: 25px">
-          <div class="row bg-light align-items-center rounded-3 shadow">
+        <div class="col-lg-6 col-xl-4 col-12">
+          <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
             <div class="col-6 p-2">
-              <img src="..\resource\assets\assets_lama\foods\excelso3.jpg" class="card-img-top rounded-2" />
+              <img src="..\resource\assets\assets_lama\foods\excelso3.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Caramel Jelly Latte</h4>
-              <p class="">Caramel latte dengan topping jelly</p>
-              <p class="">Rp. 50.000</p>
-              <div class="row d-flex justify-content-start" style="padding-left: 12px; padding-right: 12px">
+            <div class="col-6 mt-4 pb-3">
+              <div style="height: 12rem">
+                <h4 class="">Caramel Jelly Latte</h4>
+                <p class="">Caramel latte dengan topping jelly</p>
+                <p class="">Rp. 50.000</p>
+              </div>
+
+              <div class="row d-flex justify-content-start align-items-center" style="padding-left: 12px; padding-right: 12px">
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-minus" data-id="1" style="width: 3rem">-</button>
-                <div id="counter-3" class="fw-bold col-4" style="text-align: center"><p>0</p></div>
+                <div id="counter-3" class="fw-bold col-4 food-counter align-items-center" style="text-align: center">0</div>
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-plus" data-id="1" style="width: 3rem">+</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6 col-xl-4 col-12 d-flex justify-content-start justify-content-md-center mt-md-0 mt-5 mb-3" style="padding-right: 30px; padding-left: 25px">
-          <div class="row bg-light align-items-center rounded-3 shadow">
+        <div class="col-lg-6 col-xl-4 col-12">
+          <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
             <div class="col-6 p-2">
-              <img src="..\resource\assets\assets_lama\foods\excelso4.jpg" class="card-img-top rounded-2" />
+              <img src="..\resource\assets\assets_lama\foods\excelso4.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Iced Coffee</h4>
-              <p class="">Iced brewed coffee</p>
-              <p class="">Rp. 28.000</p>
-              <div class="row d-flex justify-content-start" style="padding-left: 12px; padding-right: 12px">
+            <div class="col-6 mt-4 pb-3">
+              <div style="height: 12rem">
+                <h4 class="">Iced Coffee</h4>
+                <p class="">Iced brewed coffee</p>
+                <p class="">Rp. 28.000</p>
+              </div>
+
+              <div class="row d-flex justify-content-start align-items-center" style="padding-left: 12px; padding-right: 12px">
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-minus" data-id="1" style="width: 3rem">-</button>
-                <div id="counter-4" class="fw-bold col-4" style="text-align: center"><p>0</p></div>
+                <div id="counter-4" class="fw-bold col-4 food-counter align-items-center" style="text-align: center">0</div>
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-plus" data-id="1" style="width: 3rem">+</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6 col-xl-4 col-12 d-flex justify-content-start justify-content-md-center mt-md-0 mt-5 mb-3" style="padding-right: 30px; padding-left: 25px">
-          <div class="row bg-light align-items-center rounded-3 shadow">
+        <div class="col-lg-6 col-xl-4 col-12">
+          <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
             <div class="col-6 p-2">
-              <img src="..\resource\assets\assets_lama\foods\excelso5.png" class="card-img-top rounded-2" />
+              <img src="..\resource\assets\assets_lama\foods\excelso5.png" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Lychee Tea</h4>
-              <p class="">Minuman teh dengan tambahan buah lychee</p>
-              <p class="">Rp. 25.000</p>
-              <div class="row d-flex justify-content-start" style="padding-left: 12px; padding-right: 12px">
+            <div class="col-6 mt-4 pb-3">
+              <div style="height: 12rem">
+                <h4 class="">Lychee Tea</h4>
+                <p class="">Minuman teh dengan tambahan buah lychee</p>
+                <p class="">Rp. 25.000</p>
+              </div>
+
+              <div class="row d-flex justify-content-start align-items-center" style="padding-left: 12px; padding-right: 12px">
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-minus" data-id="1" style="width: 3rem">-</button>
-                <div id="counter-5" class="fw-bold col-4" style="text-align: center"><p>0</p></div>
+                <div id="counter-5" class="fw-bold col-4 food-counter align-items-center" style="text-align: center">0</div>
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-plus" data-id="1" style="width: 3rem">+</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-6 col-xl-4 col-12 d-flex justify-content-start justify-content-md-center mt-md-0 mt-5 mb-3" style="padding-right: 30px; padding-left: 25px">
-          <div class="row bg-light align-items-center rounded-3 shadow">
+        <div class="col-lg-6 col-xl-4 col-12">
+          <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
             <div class="col-6 p-2">
-              <img src="..\resource\assets\assets_lama\foods\excelso6.jpg" class="card-img-top rounded-2" />
+              <img src="..\resource\assets\assets_lama\foods\excelso6.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Matcha Pearl</h4>
-              <p class="">Matcha dan pearl</p>
-              <p class="">Rp. 32.000</p>
-              <div class="row d-flex justify-content-start" style="padding-left: 12px; padding-right: 12px">
+            <div class="col-6 mt-4 pb-3">
+              <div style="height: 12rem">
+                <h4 class="">Matcha Pearl</h4>
+                <p class="">Matcha dan pearl</p>
+                <p class="">Rp. 32.000</p>
+              </div>
+              <div class="row d-flex justify-content-start align-items-center" style="padding-left: 12px; padding-right: 12px">
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-minus" data-id="1" style="width: 3rem">-</button>
-                <div id="counter-6" class="fw-bold col-4" style="text-align: center"><p>0</p></div>
+                <div id="counter-6" class="fw-bold col-4 food-counter align-items-center" style="text-align: center">0</div>
                 <button class="btn btn-sm btn-custom col-4 fw-bold btn-plus" data-id="1" style="width: 3rem">+</button>
               </div>
             </div>
