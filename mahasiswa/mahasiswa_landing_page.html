@@ -14,11 +14,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../resource/css/mainStyle.css" />
     <link rel="stylesheet" href="../resource/css/mahasiswa_landing_page.css" />
-    <link rel="stylesheet" href="../resource/css/mahasiswa_navbar.css"/>
+    <link rel="stylesheet" href="../resource/css/mahasiswa_navbar.css" />
     <link rel="icon" type="image/x-icon" href="../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" />
 
     <!-- SweetAlert2 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
   </head>
   <body onload="setInterval('displayTime()', 1);">
     <!-- Navbar -->
@@ -26,9 +26,9 @@
       <div class="container-fluid align-items-center row">
         <!-- Brand -->
         <div class="col-lg-5 col-6 ms-lg-5 align-items-center d-flex justify-content-start">
-          <a href="mahasiswa_landing_page.html" style="text-decoration: none;">
-          <img src="../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" style="width: 4rem" />
-          <span class="navbar-brand ms-3 mb-0 fs-4 text-white" style="font-family: var(--font-family-1)">Petra Eats</span>
+          <a href="mahasiswa_landing_page.html" style="text-decoration: none">
+            <img src="../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" style="width: 4rem" />
+            <span class="navbar-brand ms-3 mb-0 fs-4 text-white" style="font-family: var(--font-family-1)">Petra Eats</span>
           </a>
         </div>
         <!-- Navbar brand and toggle button -->
@@ -44,17 +44,17 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav col-12 row gap-2 d-flex justify-content-end">
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
-                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)"  id="navitem" ><i class="fa fa-history"></i> Riwayat</a>
+                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
               </li>
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
-                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)"  id="navitem" ><i class="fa fa-shopping-basket"></i> Keranjang</a>
+                <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-shopping-basket"></i> Keranjang</a>
               </li>
               <li class="nav-item col-lg-3 col-12 mt-lg-0 mt-4">
                 <div class="dropdown">
                   <a class="navbar-brand nav-link mb-0 fs-5 dropbtn" style="font-family: var(--font-family-1)" id="navitem" onclick="logoutDropdown()">C14220331</a>
-                    <div class="dropdown-content rounded-2" id="name-dropdown">
-                        <a href="#" class="btn btn-danger btn-sm rounded-2 fw-bold" onclick="confirmLogout()">Logout</a>
-                    </div>
+                  <div class="dropdown-content rounded-2" id="name-dropdown">
+                    <a href="#" class="btn btn-danger btn-sm rounded-2 fw-bold" onclick="confirmLogout()">Logout</a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -64,22 +64,21 @@
     </nav>
     <!-- Navbar -->
 
-
     <div class="container mt-5 mb-5">
       <div class="row d-flex justify-content-between">
         <div class="col-md-6 col-12">
           <div class="fw-bold" style="font-size: 1.2rem">Hai C14220331 lapar ya,<br />yuk pesan makanan favoritmu !</div>
           <div class="fw-bolder mt-3 mb-3" style="font-size: 3.5rem">
-            <h1 id="jam"></h1>
+            <h1 class="fw-bold" id="jam"></h1>
           </div>
           <div class="fw-bold" style="font-size: 1.2rem">Jangan lupa kelas !</div>
         </div>
-        <div class="col-md-6 col-12 d-flex justify-content-end mt-md-0 mt-5" style="padding-right: 30px; padding-left: 25px;">
+        <div class="col-md-6 col-12 d-flex justify-content-end mt-md-0 mt-5" style="padding-right: 30px; padding-left: 25px">
           <div class="row bg-light align-items-center rounded-3 shadow">
             <div class="col-6 p-2">
               <img src="..\resource\assets\assets_lama\foods\ayampinarak3.jpg" class="card-img-top rounded-2" />
             </div>
-            <div class="col-6 mt-2 mb-3 ">
+            <div class="col-6 mt-2 mb-3">
               <h4 class="">Recent Purchase:</h4>
               <h5 class="">2 x Ayam Goreng enak</h5>
               <h5 class="">2 x Es teh</h5>
@@ -89,7 +88,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row mt-5 d-flex justify-content-center">
         <div class="col-12 fs-4 fw-bold d-flex justify-content-lg-start justify-content-center">Pilih Kantin :</div>
         <!--List Kantin-->

@@ -32,13 +32,21 @@
   border-radius: 0.5rem;
   width: 7rem;
 }
-
+/* Card Tambah Besar */
+a {
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+}
 /* Responsive */
 @media (max-width: 400px) {
   .nama-kantin {
     font-size: 4rem;
   }
-  
+
   .back-button {
     font-size: 1.1rem;
   }
@@ -48,7 +56,7 @@
   .nama-kantin {
     font-size: 5rem;
   }
-  
+
   .back-button {
     font-size: 1.2rem;
   }
@@ -58,7 +66,7 @@
   .nama-kantin {
     font-size: 6.5rem;
   }
-  
+
   .back-button {
     align-self: flex-start;
     font-size: 1.5rem;
@@ -91,5 +99,4 @@
     padding-right: 200px;
     font-size: 8rem;
   }
-  
 }
