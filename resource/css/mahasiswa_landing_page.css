@@ -25,3 +25,56 @@ a:hover {
   text-decoration: none;
   transform: scale(1.05);
 }
+.custom-kantin-card {
+  width: 14rem;
+}
+.custom-title-kantin {
+  font-size: 2rem;
+}
+/* Responsive */
+@media (max-width: 578px) {
+  .recent-font-title {
+    font-size: 0.8rem;
+  }
+  .recent-font-menu {
+    font-size: 0.7rem;
+  }
+  .recent-font-price {
+    font-size: 0.6rem;
+  }
+
+  .custom-kantin-card {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+  }
+
+  .custom-title-kantin {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 578px) {
+  .custom-kantin-card {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+  }
+
+  .custom-title-kantin {
+    font-size: 1rem;
+  }
+}

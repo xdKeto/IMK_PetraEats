@@ -22,7 +22,7 @@
   </head>
   <body onload="setInterval('displayTime()', 1);">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-4" style="background-color: var(--title-color)">
+    <nav class="navbar navbar-expand-lg p-4 fixed-top" style="background-color: var(--title-color)">
       <div class="container-fluid align-items-center row">
         <!-- Brand -->
         <div class="col-lg-5 col-6 ms-lg-5 align-items-center d-flex justify-content-start">
@@ -71,25 +71,25 @@
     </nav>
     <!-- Navbar -->
 
-    <div class="container mt-5 mb-5">
+    <div class="container mb-5" style="margin-top: 10rem">
       <div class="row d-flex justify-content-between">
-        <div class="col-md-6 col-12">
+        <div class="col-6">
           <div class="fw-bold" style="font-size: 1.2rem">Hai C14220331 lapar ya,<br />yuk pesan makanan favoritmu !</div>
-          <div class="fw-bolder mt-3 mb-3" style="font-size: 3.5rem">
-            <h1 class="fw-bold" id="jam"></h1>
+          <div class="fw-bolder mt-3 mb-3" style="font-size: 2.5rem">
+            <p class="fw-bold" id="jam"></p>
           </div>
           <div class="fw-bold" style="font-size: 1.2rem">Jangan lupa kelas !</div>
         </div>
-        <div class="col-md-6 col-12 d-flex justify-content-end mt-md-0 mt-5" style="padding-right: 30px; padding-left: 25px">
+        <div class="col-6 d-flex justify-content-end" style="padding-right: 30px; padding-left: 25px">
           <div class="row bg-light align-items-center rounded-3 shadow">
-            <div class="col-6 p-2">
+            <div class="col-sm-6 col-12 p-2">
               <img src="..\resource\assets\assets_lama\foods\ayampinarak3.jpg" class="card-img-top rounded-2" />
             </div>
-            <div class="col-6 mt-2 mb-3">
-              <h4 class="">Recent Purchase:</h4>
-              <h5 class="">2 x Ayam Goreng enak</h5>
-              <h5 class="">2 x Es teh</h5>
-              <p class="">Rp. 50.000</p>
+            <div class="col-sm-6 col-12 mt-2 mb-3">
+              <h4 class="recent-font-title">Recent Purchase:</h4>
+              <h5 class="recent-font-menu">2 x Ayam Goreng enak</h5>
+              <h5 class="recent-font-menu">2 x Es teh</h5>
+              <p class="recent-font-price">Rp. 50.000</p>
               <a href="#" class="btn btn-primary btn-sm">Pesan Lagi</a>
             </div>
           </div>
@@ -100,58 +100,58 @@
         <div class="col-12 fs-4 fw-bold d-flex justify-content-lg-start justify-content-center">Pilih Kantin :</div>
         <!--List Kantin-->
         <div class="row mt-3 d-flex justify-content-center ps-lg-2">
-          <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-lg-start justify-content-center mt-lg-0 mt-5 ps-lg-1">
+          <div class="col-lg-3 col-6 d-flex justify-content-lg-start justify-content-center mt-lg-0 mt-5 ps-lg-1">
             <a href="mahasiswa_kantinQ.html">
-              <div class="card shadow rounded-3" style="width: 14rem">
+              <div class="card shadow rounded-3 custom-kantin-card">
                 <div class="container mt-2">
                   <div class="image-container mt-1">
                     <img src="../resource/assets/KantinQ.jpeg" class="card-img-top rounded-2" alt="Kantin Q" />
                   </div>
                 </div>
                 <div class="card-body">
-                  <p class="card-text d-flex justify-content-center fs-1 fw-bold">Kantin Q</p>
+                  <p class="card-text d-flex justify-content-center fw-bold custom-title-kantin">Kantin Q</p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-center mt-lg-0 mt-5 pe-lg-2 pe-xl-5">
+          <div class="col-lg-3 col-6 d-flex justify-content-center mt-lg-0 mt-5 pe-lg-2 pe-xl-5">
             <a href="mahasiswa_kantinP.html">
-              <div class="card shadow rounded-3" style="width: 14rem">
+              <div class="card shadow rounded-3 custom-kantin-card">
                 <div class="container mt-2">
                   <div class="image-container mt-1">
                     <img src="../resource/assets/KantinP.jpg" class="card-img-top rounded-2" alt="Kantin P" />
                   </div>
                 </div>
                 <div class="card-body">
-                  <p class="card-text d-flex justify-content-center fs-1 fw-bold">Kantin P</p>
+                  <p class="card-text d-flex justify-content-center fw-bold custom-title-kantin">Kantin P</p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-center mt-lg-0 mt-5 ps-lg-2 ps-xl-5">
+          <div class="col-lg-3 col-6 d-flex justify-content-center mt-lg-0 mt-5 ps-lg-2 ps-xl-5">
             <a href="mahasiswa_kantinW.html">
-              <div class="card shadow rounded-3" style="width: 14rem">
+              <div class="card shadow rounded-3 custom-kantin-card">
                 <div class="container mt-2">
                   <div class="image-container mt-1">
                     <img src="../resource/assets/KantinW.jpeg" class="card-img-top rounded-2" alt="Kantin W" />
                   </div>
                 </div>
                 <div class="card-body">
-                  <p class="card-text d-flex justify-content-center fs-1 fw-bold">Kantin W</p>
+                  <p class="card-text d-flex justify-content-center fw-bold custom-title-kantin">Kantin W</p>
                 </div>
               </div>
             </a>
           </div>
-          <div class="col-lg-3 col-sm-6 col-12 d-flex justify-content-lg-end justify-content-center mt-lg-0 mt-5 pe-lg-1">
+          <div class="col-lg-3 col-6 d-flex justify-content-lg-end justify-content-center mt-lg-0 mt-5 pe-lg-1">
             <a href="mahasiswa_kantinT.html">
-              <div class="card shadow rounded-3" style="width: 14rem">
+              <div class="card shadow rounded-3 custom-kantin-card">
                 <div class="container mt-2">
                   <div class="image-container mt-1">
                     <img src="../resource/assets/KantinT.jpeg" class="card-img-top rounded-2" alt="Kantin T" />
                   </div>
                 </div>
                 <div class="card-body">
-                  <p class="card-text d-flex justify-content-center fs-1 fw-bold">Kantin T</p>
+                  <p class="card-text d-flex justify-content-center fw-bold custom-title-kantin">Kantin T</p>
                 </div>
               </div>
             </a>

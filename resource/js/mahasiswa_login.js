@@ -6,33 +6,33 @@ function validateLogin() {
     toast: true,
     position: "top-start",
     showConfirmButton: false,
-    timer: 2000,
+    timer: 3000,
     timerProgressBar: true,
     didOpen: (toast) => {
-      toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'green';
-    }
+      toast.querySelector(".swal2-timer-progress-bar").style.backgroundColor = "green";
+    },
   });
 
   const toastError = Swal.mixin({
     toast: true,
     position: "top-start",
     showConfirmButton: false,
-    timer: 2000,
+    timer: 3000,
     timerProgressBar: true,
     didOpen: (toast) => {
-      toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'red';
-    }
+      toast.querySelector(".swal2-timer-progress-bar").style.backgroundColor = "red";
+    },
   });
 
   const toastInfo = Swal.mixin({
     toast: true,
     position: "top-start",
     showConfirmButton: false,
-    timer: 2000,
+    timer: 3000,
     timerProgressBar: true,
     didOpen: (toast) => {
-      toast.querySelector('.swal2-timer-progress-bar').style.backgroundColor = 'cyan';
-    }
+      toast.querySelector(".swal2-timer-progress-bar").style.backgroundColor = "cyan";
+    },
   });
 
   if (username === "c14220331@john.petra.ac.id" && password === "c14220331") {
@@ -57,7 +57,7 @@ function validateLogin() {
   }
 }
 
-function confirmLogout () {
+function confirmLogout() {
   Swal.fire({
     title: "Log out?",
     text: "Apakah anda yakin ingin logout ?",
@@ -67,7 +67,7 @@ function confirmLogout () {
     cancelButtonColor: "#bbbbbb",
     confirmButtonText: "Iya",
     cancelButtonText: "Cancel",
-    reverseButtons: true // This option moves the confirm button to the right
+    reverseButtons: true, // This option moves the confirm button to the right
   }).then((result) => {
     if (result.isConfirmed) {
       setTimeout(function () {
