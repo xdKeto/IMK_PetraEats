@@ -34,6 +34,28 @@
 }
   
 
+.btn-keranjang {
+  background-color: #003662;
+  color: white;
+}
+
+.btn-keranjang.disabled {
+  background-color: grey;
+  color: #ccc;
+  pointer-events: none;
+}
+/* Hide the button by default */
+#cekKeranjang {
+  display: none;
+}
+
+/* Responsive button keranjang saat navbar berubah */
+@media (max-width: 991px) {
+  .btn-keranjang {
+    display: block;
+  }
+}
+
 /* Responsive */
 @media (max-width: 400px) {
   .nama-toko {
