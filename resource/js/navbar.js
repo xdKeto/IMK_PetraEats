@@ -57,6 +57,7 @@ keranjangBtn.addEventListener("click", function (event) {
     });
   }
 });
+
 function confirmLogout() {
   Swal.fire({
     title: "Log out?",

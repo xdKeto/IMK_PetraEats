@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".container");
   const cartAlert = document.getElementById("cart-alert");
+  const cartAler2 = document.getElementById("cart-alert-bottom-left");
   const cekKeranjang = document.getElementById("cekKeranjang");
 
   container.addEventListener("click", (event) => {
@@ -18,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       counterElement.textContent = currentValue;
       updateCartAlert();
-      updateKeranjangButton();
     }
   });
 
@@ -34,38 +34,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (hasItems) {
       cartAlert.style.display = "block";
+      cartAler2.style.display = "block";
     } else {
       cartAlert.style.display = "none";
+      cartAlert2.style.display = "none";
     }
   }
 
-  function updateKeranjangButton() {
+
+  
+  // Add click event listener for SweetAlert2 confirmation
+  cekKeranjang.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent the default anchor behavior
+
     const counters = document.querySelectorAll(".food-counter");
-    let allZero = true;
+    let hasItems = false;
 
     counters.forEach((counter) => {
-      if (parseInt(counter.textContent) > 0) {
-        allZero = false;
+      if (parseInt(counter.textContent, 10) > 0) {
+        hasItems = true;
       }
     });
 
-    if (allZero) {
-      cekKeranjang.classList.add("disabled");
-    } else {
-      cekKeranjang.classList.remove("disabled");
-    }
-  }
-
-  // Call updateButtonState on page load
-  updateKeranjangButton();
-
-  // Add click event listener for SweetAlert2 confirmation
-  cekKeranjang.addEventListener("click", (event) => {
-    if (!cekKeranjang.classList.contains("disabled")) {
-      event.preventDefault(); // Prevent the default anchor behavior
+    if (!hasItems) {
       Swal.fire({
-        title: "Cek keranjang ?",
-        text: "Sudah selesai mesannya ?",
+        title: "Keranjang kosong!",
+        text: "Yuk pesan dulu :)",
+        icon: "error",
+        confirmButtonColor: "#d33",
+        confirmButtonText: "Okay",
+      });
+    } else {
+      Swal.fire({
+        title: "Cek keranjang?",
+        text: "Sudah selesai mesannya?",
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#0095e7",
@@ -86,9 +88,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Function to show/hide the button based on screen size
   function handleResize() {
     if (window.innerWidth <= 991) {
-      cekKeranjang.style.display = 'block';
+      cekKeranjang.style.display = "block";
     } else {
-      cekKeranjang.style.display = 'none';
+      cekKeranjang.style.display = "none";
     }
   }
 
@@ -96,5 +98,5 @@ document.addEventListener("DOMContentLoaded", () => {
   handleResize();
 
   // Listen for window resize events
-  window.addEventListener('resize', handleResize);
+  window.addEventListener("resize", handleResize);
 });

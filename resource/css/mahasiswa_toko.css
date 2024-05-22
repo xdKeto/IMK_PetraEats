@@ -4,10 +4,10 @@
 }
 
 .image-container {
-    position: relative;
-    width: 100%;
-    height: 10rem;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
 }
 
 .image-container img {
@@ -20,33 +20,46 @@
 }
 
 .btn-custom {
-    background-color: #2F4858; 
-    color: white
+  background-color: #2f4858;
+  color: white;
 }
 
 /* Back button */
 .back-button {
-    color: white;
-    font-size: 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    width: 7rem;
-}
-  
-
-.btn-keranjang {
-  background-color: #003662;
   color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 7rem;
 }
 
-.btn-keranjang.disabled {
-  background-color: grey;
-  color: #ccc;
-  pointer-events: none;
-}
 /* Hide the button by default */
 #cekKeranjang {
   display: none;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000; 
+}
+
+.floating-button .btn-keranjang {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #003662; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+}
+
+.floating-button .btn-keranjang:hover {
+  background-color: #003662; 
+  text-decoration: none;
 }
 
 /* Responsive button keranjang saat navbar berubah */
