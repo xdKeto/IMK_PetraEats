@@ -88,6 +88,10 @@
   .custom-screenshot {
     font-size: 0.8rem;
   }
+
+  .custom-va {
+    font-size: 0.6rem;
+  }
 }
 @media (max-width: 200px) {
   .custom-title {
