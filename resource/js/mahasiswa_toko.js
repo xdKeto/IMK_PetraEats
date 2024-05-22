@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartAler2.style.display = "block";
     } else {
       cartAlert.style.display = "none";
-      cartAlert2.style.display = "none";
+      cartAler2.style.display = "none";
     }
   }
 
