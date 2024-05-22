@@ -1,14 +1,14 @@
 $(document).ready(function () {
   $("#bayarBtn").on("click", function () {
     Swal.fire({
-      title: "Cek keranjang ?",
-      text: "Sudah selesai mesannya ?",
+      title: "Bayar ?",
+      text: "Yakin dengan pesanan kamu ?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#0095e7",
       cancelButtonColor: "#bbbbbb",
-      confirmButtonText: "Sudah",
-      cancelButtonText: "Tambah lagi deh",
+      confirmButtonText: "Ya",
+      cancelButtonText: "Cancel",
       reverseButtons: true, // This option moves the confirm button to the right
     }).then((result) => {
       if (result.isConfirmed) {
