@@ -27,6 +27,9 @@
   .custom-price-card {
     font-size: 1.5rem;
   }
+  .custom-title {
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -36,6 +39,9 @@
 
   .custom-price-card {
     font-size: 1.2rem;
+  }
+  .custom-title {
+    font-size: 4rem;
   }
 }
 @media (max-width: 768px) {
@@ -48,6 +54,9 @@
 
   .custom-price-card {
     font-size: 1.2rem;
+  }
+  .custom-title {
+    font-size: 3rem;
   }
 }
 @media (max-width: 400px) {
@@ -62,6 +71,14 @@
   }
 
   .custom-price-card {
+    font-size: 1rem;
+  }
+  .custom-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 200px) {
+  .custom-title {
     font-size: 1rem;
   }
 }
