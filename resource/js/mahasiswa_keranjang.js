@@ -13,7 +13,7 @@ $(document).ready(function () {
     }).then((result) => {
       if (result.isConfirmed) {
         setTimeout(function () {
-          window.location = "../mahasiswa/mahasiswa_bayar.html";
+          window.location = "../mahasiswa/mahasiswa_bayar.php";
         }, 300);
       }
     });

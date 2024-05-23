@@ -1,6 +1,5 @@
 function logoutDropdown() {
   document.getElementById("name-dropdown").classList.toggle("show");
-  console.log("asdasd");
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -51,7 +50,7 @@ keranjangBtn.addEventListener("click", function (event) {
     }).then((result) => {
       if (result.isConfirmed) {
         setTimeout(function () {
-          window.location = "../mahasiswa/mahasiswa_keranjang.html";
+          window.location = "../mahasiswa/mahasiswa_keranjang.php";
         }, 300);
       }
     });
@@ -72,7 +71,7 @@ function confirmLogout() {
   }).then((result) => {
     if (result.isConfirmed) {
       setTimeout(function () {
-        window.location = "../mahasiswa/mahasiswa_login.html";
+        window.location = "../mahasiswa/mahasiswa_login.php";
       }, 800);
     }
   });

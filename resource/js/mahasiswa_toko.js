@@ -41,8 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
-  
   // Add click event listener for SweetAlert2 confirmation
   cekKeranjang.addEventListener("click", (event) => {
     event.preventDefault(); // Prevent the default anchor behavior
@@ -78,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }).then((result) => {
         if (result.isConfirmed) {
           setTimeout(function () {
-            window.location = "mahasiswa_keranjang.html";
+            window.location = "mahasiswa_keranjang.php";
           }, 300);
         }
       });
