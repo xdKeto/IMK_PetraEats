@@ -1,12 +1,3 @@
-<?
-require_once "../../connect.php";
-session_start();
-
-?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,10 +14,9 @@ session_start();
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../resource/css/mainStyle.css" />
-
-  <link rel="stylesheet" href="../../resource/css/mahasiswa_toko.css" />
+  <link rel="stylesheet" href="../../resource/css/mahasiswa_navbar.css" />
+  <link rel="stylesheet" href="../../resource/css/mahasiswa_riwayat.css" />
   <link rel="icon" type="image/x-icon" href="../../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" />
-
 </head>
 
 <body>
@@ -53,10 +43,10 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav col-12 row d-flex align-items-center ms-sm-0 ms-2">
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="mahasiswa_riwayat.php" class="navbar-brand nav-link mb-0 fs-5 position-relative bg-light rounded" style="font-family: var(--font-family-1); color: #003662" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
+              <a href="#" class="navbar-brand nav-link mb-0 fs-5 position-relative bg-light rounded" style="font-family: var(--font-family-1); color: #003662" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem-keranjang">
+              <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem-keranjang">
                 <i class="fa fa-shopping-basket"></i> Keranjang
                 <span id="cart-alert" class="position-absolute start-1 translate-middle p-1 bg-danger border border-light rounded-circle" style="display: none; top: 6px">
                   <span class="visually-hidden">New alerts</span>
@@ -83,8 +73,8 @@ session_start();
   <div class="container mb-5" style="margin-top: 10rem">
     <!-- Button and Title -->
     <div class="row d-flex justify-content-between">
-      <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_kantinQ.html">Back</a>
-      <div class="nama-toko col-lg-10 col-12 fw-bold">Riwayat Pesanan</div>
+      <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_kantinQ.php">Back</a>
+      <div class="nama-toko col-lg-10 col-12 fw-bold text-center">Riwayat Pesanan</div>
     </div>
     <!-- Button and Title -->
 
@@ -92,68 +82,100 @@ session_start();
     <div class="container row d-flex justify-content-center rounded-4 shadow mt-4 pb-5 ms-1 gap-3" style="background-color: #f2f8f9">
       <!-- Pesanan Aktif -->
       <div class="col-12 fs-3 fw-bold justify-content-start pt-3">Pesanan di proses:</div>
-      <div class="col-12 row border border-3 rounded ">
-        <div class="col-3 mb-4 mt-5 justify-content-center">
-          <img src="..\..\resource\assets\assets_lama\kantin\toko\kantinQ5.jpg" class="float-start rounded-2" style="max-width: 80%; max-height: 80%;" />
-        </div>
-        <div class="col-6 mb-4 mt-5">
-          <div style="height: 12rem">
-            <h4 class="">Excelso</h4>
-            <p class="pt-2">Cookies and Cream x 1</p>
-            <p class="">Lychee Tea x 2</p>
-            <p class="">Total: Rp. 75.000</p>
+      <div class="col-12 d-flex justify-content-center row border border-3 rounded">
+
+
+
+
+        <div class="col-12 row mt-5 mb-4 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" id="">
+          <div class="col-12 d-flex align-items-center justify-content-center text-center mb-3">
+            <div class="bg-warning rounded-4 p-2 ps-4 pe-4 fw-bold" disabled data-bs-toggle="button">Permintaan</div>
+          </div>
+          <div class="col-sm-4 col-6 d-flex justify-content-center ">
+            <img src="../..\resource\assets\assets_lama\kantin\toko\kantinQ5.jpg" class="float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
+          </div>
+          <div class="col-sm-8 col-6 d-flex align-items-center">
+            <div class="d-flex align-items-center" style="max-height: 12rem">
+              <div class="row align-items-center gap-2">
+                <div class="col-12 fw-bold mb-md-2 custom-menu-title">Excelso</div>
+                <div class="col-12 custom-menu-desc">Cookies and Cream x 1</div>
+                <div class="col-12 custom-menu-desc">Lychee Tea x 2</div>
+                <div class="col-12 fw-bold custom-menu-price">Total: Rp. 75.000</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-3 mb-4 mt-5">
-          <button type="button" class="btn btn-warning rounded-4" disabled data-bs-toggle="button">Permintaan</button>
-        </div>
+
+
+
+
+
+
       </div>
       <!-- Pesanan Aktif -->
 
       <!-- pesanan sudah selesai -->
-      <div class="col-12 fs-3 fw-bold justify-content-start pt-3">Riwayat pesanan:</div>
-      <div class="col-12 row border border-3 rounded ">
-        <div class="row">
-          <div class="col-3 mb-4 mt-5 justify-content-start ">
-            <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class="float-start rounded-2" style="max-width: 80%; max-height: 80%;" />
+      <div class="col-12 fs-3 fw-bold justify-content-start pt-3">Riwayat pesanan:
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-2 d-flex justify-content-start pt-2">
+
+      </div>
+      <div class="col-12 row d-flex justify-content-center border border-3 rounded">
+
+        <div class="col-12 row mt-3 mb-2 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" id="">
+          <div class="col-12 d-flex align-items-center justify-content-center text-center mb-3">
+            <div class="bg-success text-light rounded-4 p-2 ps-4 pe-4 fw-bold" disabled data-bs-toggle="button">Selesai</div>
           </div>
-          <div class="col-5 mb-4 mt-5">
-            <div style="height: 12rem">
-              <h4 class="">Depot Kita</h4>
-              <p class="pt-2">Ayam geprek x 2</p>
-              <p class="">Es teh x 2</p>
-              <p class="">Total: Rp. 60.000</p>
+          <div class="col-sm-4 col-6 d-flex justify-content-center ">
+            <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
+          </div>
+          <div class="col-sm-8 col-6 d-flex align-items-center">
+            <div class="d-flex align-items-center" style="max-height: 12rem">
+              <div class="row align-items-center gap-2">
+                <div class="col-12 fw-bold mb-md-2 custom-menu-title">Depot Kita</div>
+                <div class="col-12 fw-bold custom-menu-date">21-12-2024, 13:00</div>
+                <div class="col-12 custom-menu-desc">Ayam geprek x 2</div>
+                <div class="col-12 custom-menu-desc">Es teh x 2</div>
+                <div class="col-12 fw-bold custom-menu-price">Total: Rp. 60.000</div>
+              </div>
             </div>
           </div>
-          <div class="col-2 mb-4 mt-5">
-            <button type="button" class="btn btn-success rounded-4" data-bs-toggle="button">Selesai</button>
-          </div>
-          <div class="col-2 mb-4 mt-5">
-            <button type="button" class="btn rounded-4" data-bs-toggle="button" style="background-color: #003662; color: white;">Pesan lagi</button>
+          <div class="col-12 d-flex align-items-center justify-content-center justify-content-sm-end text-center mt-4">
+            <button class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow">Pesan Lagi</button>
           </div>
         </div>
 
         <hr>
 
-        <div class="row">
-          <div class="col-3 mb-4 mt-5 justify-content-start ">
-            <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class="float-start rounded-2" style="max-width: 80%; max-height: 80%;" />
+        <div class="col-12 row mb-2 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" id="">
+          <div class="col-12 d-flex align-items-center justify-content-center text-center mb-3">
+            <div class="bg-success text-light rounded-4 p-2 ps-4 pe-4 fw-bold">Selesai</div>
           </div>
-          <div class="col-5 mb-4 mt-5">
-            <div style="height: 12rem">
-              <h4 class="">Depot Kita</h4>
-              <p class="pt-2">Ayam geprek x 2</p>
-              <p class="">Es teh x 2</p>
-              <p class="">Total: Rp. 60.000</p>
+          <div class="col-sm-4 col-6 d-flex justify-content-center ">
+            <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
+          </div>
+          <div class="col-sm-8 col-6 d-flex align-items-center">
+            <div class="d-flex align-items-center" style="max-height: 12rem">
+              <div class="row align-items-center gap-2">
+
+                <div class="col-12 fw-bold mb-md-2 custom-menu-title">Depot Kita</div>
+                <div class="col-12 fw-bold custom-menu-date">21-12-2024, 13:00</div>
+                <div class="col-12 custom-menu-desc">Ayam geprek x 2</div>
+                <div class="col-12 custom-menu-desc">Es teh x 2</div>
+                <div class="col-12 fw-bold custom-menu-price">Total: Rp. 60.000</div>
+              </div>
             </div>
           </div>
-          <div class="col-2 mb-4 mt-5">
-            <button type="button" class="btn btn-success rounded-4" data-bs-toggle="button">Selesai</button>
-          </div>
-          <div class="col-2 mb-4 mt-5">
-            <button type="button" class="btn rounded-4" data-bs-toggle="button" style="background-color: #003662; color: white;">Pesan lagi</button>
+          <div class="col-12 d-flex align-items-center  justify-content-center justify-content-sm-end text-center mt-4">
+            <button class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow">Pesan Lagi</button>
           </div>
         </div>
+
+
 
       </div>
 
@@ -164,7 +186,7 @@ session_start();
 
   <!-- Floating Button -->
   <div class="floating-button">
-    <a id="cekKeranjang" class="btn btn-keranjang fw-bold" href="mahasiswa_keranjang.html">
+    <a id="cekKeranjang" class="btn btn-keranjang fw-bold" href="mahasiswa_keranjang.php">
       <i class="fa fa-shopping-basket" aria-hidden="true"></i>
       <span id="cart-alert-bottom-left" class="position-absolute start-1 translate-middle p-2 bg-danger border border-light rounded-circle" style="display: none; top: 13px">
         <span class="visually-hidden">New alerts</span>
