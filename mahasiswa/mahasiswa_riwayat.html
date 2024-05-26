@@ -13,14 +13,13 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../resource/css/mainStyle.css" />
-    <!-- <link rel="stylesheet" href="../resource/css/mahasiswa_kantin.css" /> -->
     <link rel="stylesheet" href="../resource/css/mahasiswa_navbar.css" />
-    <link rel="stylesheet" href="../resource/css/mahasiswa_keranjang.css" />
+    <link rel="stylesheet" href="../resource/css/mahasiswa_toko.css" />
     <link rel="icon" type="image/x-icon" href="../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-4 fixed-top" style="background-color: var(--title-color)">
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg p-4 fixed-top" style="background-color: var(--title-color)">
       <div class="container-fluid align-items-center row">
         <!-- Brand -->
         <div class="col-lg-5 col-6 ms-lg-5 align-items-center d-flex justify-content-start">
@@ -69,66 +68,106 @@
     </nav>
     <!-- Navbar -->
 
-    <div class="container-fluid row d-flex justify-content-center mb-5" style="margin-top: 10rem">
+    <div class="container mb-5" style="margin-top: 10rem">
       <!-- Button and Title -->
-      <div class="row col-12 d-flex justify-content-between">
-        <a class="btn btn-danger back-button col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_landing_page.html">Back</a>
-        <div class="nama-section col-12 fw-bold align-items-center custom-title">Riwayat Pesanan</div>
+      <div class="row d-flex justify-content-between">
+        <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_kantinQ.html">Back</a>
+        <div class="nama-toko col-lg-10 col-12 fw-bold">Riwayat Pesanan</div>
       </div>
       <!-- Button and Title -->
 
-      <div class="container col-10 shadow row d-flex align-items-center justify-content-center rounded-4 shadow mt-4 pb-5 ms-1 gap-3" style="background-color: #f2f8f9">
-        <div class="col-12 fs-3 fw-bold d-flex align-items-center justify-content-center pt-4 pb-4">Nota</div>
-        <div class="col-12 row border border-3 rounded d-flex justify-content-center bg-light">
-          <div class="col-4 d-flex align-items-center mb-4 justify-content-center">
-            <img src="..\resource\assets\assets_lama\foods\excelso1.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4 border border-black" />
+      <!-- Content -->
+      <div class="container row d-flex justify-content-center rounded-4 shadow mt-4 pb-5 ms-1 gap-3" style="background-color: #f2f8f9">
+        <!-- Pesanan Aktif -->
+        <div class="col-12 fs-3 fw-bold justify-content-start pt-3">Pesanan di proses:</div>
+        <div class="col-12 row border border-3 rounded ">
+          <div class="col-3 mb-4 mt-5 justify-content-center">
+            <img src="..\resource\assets\assets_lama\kantin\toko\kantinQ5.jpg"  class="float-start rounded-2" style="max-width: 80%; max-height: 80%;"/>
           </div>
-          <div class="col-4 d-flex align-items-center justify-content-start custom-title-card">Cookies and Cream</div>
-          <div class="col-md-4 col-12 row d-flex align-items-center justify-content-center">
-            <div class="col-12 row d-flex align-items-end justify-content-center">
-              <div class="col-12 d-flex align-items-end justify-content-center custom-price-card">Rp. 25.000</div>
-              <div class="col-12 row d-flex align-items-center justify-content-center mt-2 ms-sm-0 mb-2">
-                <button class="btn btn-sm btn-custom col-3 fw-bold btn-minus" data-id="1" style="width: 2rem">-</button>
-                <div id="counter-1" class="fw-bold col-3 food-counter align-items-center" style="text-align: center">1</div>
-                <button class="btn btn-sm btn-custom col-3 fw-bold btn-plus" data-id="1" style="width: 2rem">+</button>
-              </div>
+          <div class="col-6 mb-4 mt-5">
+            <div style="height: 12rem">
+              <h4 class="">Excelso</h4>
+              <p class="pt-2">Cookies and Cream x 1</p>
+              <p class="">Lychee Tea x 2</p>
+              <p class="">Total: Rp. 75.000</p>
             </div>
+          </div>
+          <div class="col-3 mb-4 mt-5">
+            <button type="button" class="btn btn-warning rounded-4" disabled data-bs-toggle="button">Permintaan</button>
           </div>
         </div>
-        <div class="col-12 row border border-3 rounded d-flex justify-content-center bg-light">
-          <div class="col-4 d-flex align-items-center mb-4 justify-content-center">
-            <img src="..\resource\assets\assets_lama\foods\excelso5.png" style="max-width: 12rem" class="card-img-top rounded-2 mt-4 border border-black" />
-          </div>
-          <div class="col-4 d-flex align-items-center justify-content-start custom-title-card">Lychee Tea</div>
-          <div class="col-md-4 col-12 row d-flex align-items-center justify-content-center">
-            <div class="col-12 row d-flex align-items-end justify-content-center">
-              <div class="col-12 d-flex align-items-end justify-content-center custom-price-card">Rp. 50.000</div>
-              <div class="col-12 row d-flex align-items-center justify-content-center mt-2 ms-sm-0 mb-2">
-                <button class="btn btn-sm btn-custom col-3 fw-bold btn-minus" data-id="1" style="width: 2rem">-</button>
-                <div id="counter-1" class="fw-bold col-3 food-counter align-items-center" style="text-align: center">2</div>
-                <button class="btn btn-sm btn-custom col-3 fw-bold btn-plus" data-id="1" style="width: 2rem">+</button>
+        <!-- Pesanan Aktif -->
+
+        <!-- pesanan sudah selesai -->
+        <div class="col-12 fs-3 fw-bold justify-content-start pt-3">Riwayat pesanan:</div>
+        <div class="col-12 row border border-3 rounded ">
+          <div class="row">
+            <div class="col-3 mb-4 mt-5 justify-content-start ">
+              <img src="../resource/assets/assets_lama/kantin/toko/kantinP3.png"  class="float-start rounded-2"  style="max-width: 80%; max-height: 80%;"/>
+            </div>
+            <div class="col-5 mb-4 mt-5">
+              <div style="height: 12rem">
+                <h4 class="">Depot Kita</h4>
+                <p class="pt-2">Ayam geprek x 2</p>
+                <p class="">Es teh x 2</p>
+                <p class="">Total: Rp. 60.000</p>
               </div>
             </div>
+            <div class="col-2 mb-4 mt-5">
+              <button type="button" class="btn btn-success rounded-4"  data-bs-toggle="button">Selesai</button>
+            </div>
+            <div class="col-2 mb-4 mt-5">
+              <button type="button" class="btn rounded-4"  data-bs-toggle="button" style="background-color: #003662; color: white;" >Pesan lagi</button>
+            </div>
           </div>
+          
+          <hr>
+
+          <div class="row">
+            <div class="col-3 mb-4 mt-5 justify-content-start ">
+              <img src="../resource/assets/assets_lama/kantin/toko/kantinP3.png"  class="float-start rounded-2"  style="max-width: 80%; max-height: 80%;"/>
+            </div>
+            <div class="col-5 mb-4 mt-5">
+              <div style="height: 12rem">
+                <h4 class="">Depot Kita</h4>
+                <p class="pt-2">Ayam geprek x 2</p>
+                <p class="">Es teh x 2</p>
+                <p class="">Total: Rp. 60.000</p>
+              </div>
+            </div>
+            <div class="col-2 mb-4 mt-5">
+              <button type="button" class="btn btn-success rounded-4"  data-bs-toggle="button">Selesai</button>
+            </div>
+            <div class="col-2 mb-4 mt-5">
+              <button type="button" class="btn rounded-4"  data-bs-toggle="button" style="background-color: #003662; color: white;" >Pesan lagi</button>
+            </div>
+          </div>
+          
         </div>
 
-        <div class="col-12 fs-2 mt-5">Catatan :</div>
-        <textarea class="col-12" style="min-height: 10rem"></textarea>
-        <div class="col-12 row d-flex justify-content-sm-end justify-content-center">
-          <div class="col-6 d-flex align-items-center justify-content-end custom-price-card fw-bold">Total Biaya :</div>
-          <div class="col-6 d-flex align-items-center justify-content-start ps-4 custom-price-card fw-bold">Rp. 75.000</div>
-        </div>
-        <div id="bayarBtn" class="col-12 row d-flex justify-content-sm-end justify-content-center mt-3">
-          <a class="col-sm-3 col-8 btn pt-2 pb-2 fs-3 fw-bold text-light" style="background-color: #003662">Bayar</a>
-        </div>
+        <!-- pesanan sudah selesai -->
       </div>
+      <!-- End Content-->
     </div>
+
+     <!-- Floating Button -->
+     <div class="floating-button">
+      <a id="cekKeranjang" class="btn btn-keranjang fw-bold" href="mahasiswa_keranjang.html">
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        <span id="cart-alert-bottom-left" class="position-absolute start-1 translate-middle p-2 bg-danger border border-light rounded-circle" style="display: none; top: 13px">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </a>
+    </div>
+    <!-- Floating Button -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../resource/js/mahasiswa_toko.js"></script>
+    <script type="text/javascript" src="../resource/js/mahasiswa_login.js"></script>
+    <script type="text/javascript" src="../resource/js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- JavaScript -->
-    <script type="text/javascript" src="../resource/js/mahasiswa_keranjang.js"></script>
-    <script type="text/javascript" src="../resource/js/navbar.js"></script>
   </body>
 </html>
