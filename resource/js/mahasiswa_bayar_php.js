@@ -11,10 +11,10 @@ $(document).ready(function () {
     }
   });
 
-  $("#submitBtn").on("click", function () {
+  $("#bayarBtn").on("click", function () {
     Swal.fire({
-      title: "Submit ?",
-      text: "Sudah selesai bayar ?",
+      title: "Bayar ?",
+      text: "Yakin dengan pesanan kamu ?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#0095e7",

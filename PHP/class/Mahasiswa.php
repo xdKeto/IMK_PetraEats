@@ -1,7 +1,7 @@
 <?php
 
 class Mahasiswa{
-    private $ID_Mahasiswa;
+    private $nrp;
     private $nama;
     private $email;
     private $password;

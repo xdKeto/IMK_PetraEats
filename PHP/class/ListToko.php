@@ -5,6 +5,7 @@ class ListToko{
     private $namaToko;
     private $email;
     private $password;
+    private $statusTokoAktif;
 
     function setNama($name){
 
@@ -26,6 +27,13 @@ class ListToko{
 
     }
     function konfirmPassword($id,$msg){
+
+    }
+    function setStatusTokoAktif($StatusTokoAktif){
+
+    }
+
+    function getStatusTokoAktif(){
 
     }
 }

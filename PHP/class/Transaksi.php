@@ -1,4 +1,6 @@
 <?php
+require_once "../../connect.php";
+
 
 class Transaksi{
     private $ID_Transaksi;
@@ -6,7 +8,7 @@ class Transaksi{
     private $statusPesanan;
 
     function setStatusPesanan($msg){
-
+        
     }
 
     function getStatusPesanan(){
