@@ -51,10 +51,10 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav col-12 row d-flex align-items-center ms-sm-0 ms-2">
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
+              <a href="mahasiswa_riwayat.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
+              <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
                 <i class="fa fa-shopping-basket"></i> Keranjang
                 <span id="cart-alert" class="position-absolute start-1 translate-middle p-1 bg-danger border border-light rounded-circle" style="display: none; top: 6px">
                   <span class="visually-hidden">New alerts</span>
@@ -82,7 +82,7 @@ session_start();
     <!-- Button and Title -->
     <div class="row d-flex justify-content-between">
       <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_kantinQ.php">Back</a>
-      <div class="nama-toko col-lg-10 col-12 fw-bold">Kantin Q ~ Excelso</div>
+      <div class="nama-toko col-lg-10 col-12 fw-bold text-center">Kantin Q ~ Excelso</div>
       <div class="col-12 fs-4 fw-bold d-flex justify-content-center">Silahkan Pilih Menu:</div>
     </div>
     <!-- Button and Title -->
@@ -221,8 +221,135 @@ session_start();
   </div>
   <!-- Floating Button -->
 
+  <!-- Form Submit -->
+
+  <!-- Hidden form for submission -->
+  <form id="dataForm" action="mahasiswa_keranjang.php" method="POST">
+    <!-- Hidden inputs for counter values -->
+    <input type="hidden" name="counter1" id="form-counter-1" value="">
+    <input type="hidden" name="counter2" id="form-counter-2" value="">
+    <input type="hidden" name="counter3" id="form-counter-3" value="">
+    <input type="hidden" name="counter4" id="form-counter-4" value="">
+    <input type="hidden" name="counter5" id="form-counter-5" value="">
+    <input type="hidden" name="counter6" id="form-counter-6" value="">
+    <!-- Add more hidden inputs as needed for other counters -->
+  </form>
+
+  <!-- Form Submit -->
+
   <!-- JavaScript -->
-  <script type="text/javascript" src="../../resource/js/mahasiswa_toko.js"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.querySelector(".container");
+      const cartAlert = document.getElementById("cart-alert");
+      const cartAler2 = document.getElementById("cart-alert-bottom-left");
+      const cekKeranjang = document.getElementById("cekKeranjang");
+
+      container.addEventListener("click", (event) => {
+        const target = event.target;
+
+        if (target.classList.contains("btn-plus") || target.classList.contains("btn-minus")) {
+          const counterElement = target.closest(".row").querySelector(".food-counter");
+          let currentValue = parseInt(counterElement.textContent, 10);
+
+          if (target.classList.contains("btn-plus")) {
+            currentValue += 1;
+          } else if (target.classList.contains("btn-minus") && currentValue > 0) {
+            currentValue -= 1;
+          }
+
+          counterElement.textContent = currentValue;
+          updateCartAlert();
+        }
+      });
+
+      function updateCartAlert() {
+        const counters = document.querySelectorAll(".food-counter");
+        let hasItems = false;
+
+        counters.forEach((counter) => {
+          if (parseInt(counter.textContent, 10) > 0) {
+            hasItems = true;
+          }
+        });
+
+        if (hasItems) {
+          cartAlert.style.display = "block";
+          cartAler2.style.display = "block";
+        } else {
+          cartAlert.style.display = "none";
+          cartAler2.style.display = "none";
+        }
+      }
+
+      // Add click event listener for SweetAlert2 confirmation
+      cekKeranjang.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent the default anchor behavior
+
+        const counters = document.querySelectorAll(".food-counter");
+        let hasItems = false;
+
+        counters.forEach((counter) => {
+          if (parseInt(counter.textContent, 10) > 0) {
+            hasItems = true;
+          }
+        });
+
+        if (!hasItems) {
+          Swal.fire({
+            title: "Keranjang kosong!",
+            text: "Yuk pesan dulu :)",
+            icon: "error",
+            confirmButtonColor: "#d33",
+            confirmButtonText: "Okay",
+          });
+        } else {
+          Swal.fire({
+            title: "Cek keranjang?",
+            text: "Sudah selesai mesannya?",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#0095e7",
+            cancelButtonColor: "#bbbbbb",
+            confirmButtonText: "Sudah",
+            cancelButtonText: "Tambah lagi deh",
+            reverseButtons: true, // This option moves the confirm button to the right
+          }).then((result) => {
+            if (result.isConfirmed) {
+              setTimeout(function() {
+
+                document.getElementById('form-counter-1').value = document.getElementById('counter-1').textContent;
+                document.getElementById('form-counter-2').value = document.getElementById('counter-2').textContent;
+                document.getElementById('form-counter-3').value = document.getElementById('counter-3').textContent;
+                document.getElementById('form-counter-4').value = document.getElementById('counter-4').textContent;
+                document.getElementById('form-counter-5').value = document.getElementById('counter-5').textContent;
+                document.getElementById('form-counter-6').value = document.getElementById('counter-6').textContent;
+
+                document.getElementById('dataForm').submit();
+
+              }, 300);
+
+            }
+          });
+        }
+      });
+
+      // Function to show/hide the button based on screen size
+      function handleResize() {
+        if (window.innerWidth <= 991) {
+          cekKeranjang.style.display = "block";
+        } else {
+          cekKeranjang.style.display = "none";
+        }
+      }
+
+      // Initial check
+      handleResize();
+
+      // Listen for window resize events
+      window.addEventListener("resize", handleResize);
+    });
+  </script>
   <script type="text/javascript" src="../../resource/js/mahasiswa_login.js"></script>
   <script type="text/javascript" src="../../resource/js/navbar.js"></script>
 

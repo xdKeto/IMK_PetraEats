@@ -1,3 +1,37 @@
+<?php
+
+if (!isset($_POST['counter1'])) {
+  header("Location: mahasiswa_landing_page.php");
+}
+$listPesanan = [];
+
+if (isset($_POST['counter1'])) {
+  $listPesanan[] = $_POST['counter1'];
+}
+
+if (isset($_POST['counter2'])) {
+  $listPesanan[] = $_POST['counter2'];
+}
+
+if (isset($_POST['counter3'])) {
+  $listPesanan[] = $_POST['counter3'];
+}
+
+if (isset($_POST['counter4'])) {
+  $listPesanan[] = $_POST['counter4'];
+}
+
+if (isset($_POST['counter5'])) {
+  $listPesanan[] = $_POST['counter5'];
+}
+
+if (isset($_POST['counter6'])) {
+  $listPesanan[] = $_POST['counter6'];
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,10 +78,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav col-12 row d-flex align-items-center ms-sm-0 ms-2">
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
+              <a href="mahasiswa_riwayat.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5 position-relative bg-light rounded" style="font-family: var(--font-family-1); color: #003662" id="navitem-keranjang">
+              <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5 position-relative bg-light rounded" style="font-family: var(--font-family-1); color: #003662" id="navitem-keranjang">
                 <i class="fa fa-shopping-basket"></i> Keranjang
                 <span id="cart-alert" class="position-absolute start-1 translate-middle p-1 bg-danger border border-light rounded-circle" style="display: none; top: 6px">
                   <span class="visually-hidden">New alerts</span>
@@ -107,7 +141,7 @@
             <div class="col-12 d-flex align-items-end justify-content-center custom-price-card">Rp. 50.000</div>
             <div class="col-12 row d-flex align-items-center justify-content-center mt-2 ms-sm-0 mb-2">
               <button class="btn btn-sm btn-custom col-3 fw-bold btn-minus" data-id="1" style="width: 2rem">-</button>
-              <div id="counter-1" class="fw-bold col-3 food-counter align-items-center" style="text-align: center">2</div>
+              <div id="counter-2" class="fw-bold col-3 food-counter align-items-center" style="text-align: center">2</div>
               <button class="btn btn-sm btn-custom col-3 fw-bold btn-plus" data-id="1" style="width: 2rem">+</button>
             </div>
           </div>

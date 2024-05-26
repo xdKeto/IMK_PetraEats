@@ -76,8 +76,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }).then((result) => {
         if (result.isConfirmed) {
           setTimeout(function () {
+
+            
             window.location = "mahasiswa_keranjang.html";
+
+
           }, 300);
+
         }
       });
     }

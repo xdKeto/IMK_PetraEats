@@ -54,10 +54,10 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav col-12 row d-flex align-items-center ms-sm-0 ms-2">
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
+              <a href="mahasiswa_riwayat.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
+              <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
                 <i class="fa fa-shopping-basket"></i> Keranjang
                 <span id="cart-alert" class="position-absolute start-1 translate-middle p-1 bg-danger border border-light rounded-circle" style="display: none; top: 6px">
                   <span class="visually-hidden">New alerts</span>
@@ -101,7 +101,7 @@ session_start();
             <div class="recent-font-menu fw-bold">2 x Ayam Goreng enak</div>
             <div class="recent-font-menu fw-bold">2 x Es teh</div>
             <div class="recent-font-price fw-bold">Rp. 50.000</div>
-            <a href="#" class="btn btn-primary btn-sm mt-4">Pesan Lagi</a>
+            <a href="mahasiswa_keranjang.php" class="btn btn-primary btn-sm mt-4">Pesan Lagi</a>
           </div>
         </div>
       </div>

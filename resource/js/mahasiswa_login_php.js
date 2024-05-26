@@ -42,7 +42,7 @@ function validateLogin() {
     });
 
     setTimeout(function () {
-      window.location = "mahasiswa_landing_page.html";
+      window.location = "../mahasiswa_php/mahasiswa_landing_page.php";
     }, 1200);
   } else if (username === "" && password === "") {
     toastInfo.fire({

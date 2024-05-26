@@ -50,10 +50,10 @@ session_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav col-12 row d-flex align-items-center ms-sm-0 ms-2">
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
+              <a href="mahasiswa_riwayat.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-              <a href="#" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
+              <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
                 <i class="fa fa-shopping-basket"></i> Keranjang
                 <span id="cart-alert" class="position-absolute start-1 translate-middle p-1 bg-danger border border-light rounded-circle" style="display: none; top: 6px">
                   <span class="visually-hidden">New alerts</span>
@@ -80,7 +80,6 @@ session_start();
   <div class="container-fluid row d-flex justify-content-center mb-5" style="margin-top: 10rem">
     <!-- Button and Title -->
     <div class="row col-12 d-flex justify-content-between">
-      <a class="btn btn-danger back-button col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_landing_page.php">Back</a>
       <div class="nama-section col-12 fw-bold align-items-center text-center custom-title">Bayar</div>
     </div>
     <!-- Button and Title -->
@@ -131,7 +130,7 @@ session_start();
         }).then((result) => {
           if (result.isConfirmed) {
             setTimeout(function() {
-              window.location = "../../mahasiswa_php/mahasiswa_riwayat.php";
+              window.location = "mahasiswa_riwayat.php";
             }, 300);
           }
         });
