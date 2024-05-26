@@ -1,8 +1,8 @@
 <?php
 
-if (!isset($_POST['counter1'])) {
-  header("Location: mahasiswa_landing_page.php");
-}
+// if (!isset($_POST['counter1'])) {
+//   header("Location: mahasiswa_landing_page.php");
+// }
 $listPesanan = [];
 
 if (isset($_POST['counter1'])) {
