@@ -50,7 +50,7 @@ keranjangBtn.addEventListener("click", function (event) {
     }).then((result) => {
       if (result.isConfirmed) {
         setTimeout(function () {
-          window.location = "../mahasiswa/mahasiswa_keranjang.php";
+          window.location = "../mahasiswa_php/mahasiswa_keranjang.php";
         }, 300);
       }
     });
