@@ -83,15 +83,16 @@
       <!-- Pesanan Aktif -->
       <div class="col-10 row d-flex justify-content-center border border-5 rounded-4 shadow mt-4 pb-5 ms-1 gap-3" style="background-color: #f2f8f9">
         <div class="col-12 d-flex justify-content-center row">
-          <div class="col-12 row mt-5 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan" id="">
+        <div class="col-12 row mt-5 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan1" id="">
             <div class="col-12 row d-flex align-items-center justify-content-center text-center mb-3">
-              <div class="bg-warning col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button">Permintaan</div>
+              <div id="orderStatus" class="bg-warning col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button">Permintaan</div>
             </div>
             <div class="col-md-4 col-sm-6 col-8 row d-flex justify-content-center ">
-              <div class="col-12 fw-bold custom-menu-title text-center">Excelso</div>
+              <div class="col-12 fw-bold custom-menu-title text-center">Q ~ Excelso</div>
               <div class="col-12 d-flex justify-content-center align-items-center">
                 <img src="../..\resource\assets\assets_lama\kantin\toko\kantinQ5.jpg" class=" float-start rounded-2 border border-black bg-danger" style="max-width: 100%; max-height: 100%;" />
               </div>
+              <div class="col-12 fw-bold custom-menu-date text-center">29 May 2024</div>
             </div>
             <div class="col-md-8 col-sm-6 col-4 d-flex align-items-center">
               <div class="d-flex align-items-center" style="max-height: 12rem">
@@ -102,20 +103,24 @@
                 </div>
               </div>
             </div>
+            <div class="col-12 d-flex align-items-center justify-content-center justify-content-sm-end text-center mt-4" style="display: none;">
+              <a id="pesanLagiContainer1" href="mahasiswa_keranjang.php" class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow" style="display: none;">Pesan Lagi</a>
+            </div>
           </div>
 
           <hr>
           <!-- Pesanan Aktif -->
-          <div class="col-12 row mt-3 mb-2 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan" id="">
+
+          <div class="col-12 row mt-3 mb-2 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan2" id="">
             <div class="col-12 row d-flex align-items-center justify-content-center text-center mb-3">
               <div class="bg-success text-light col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button">Selesai</div>
             </div>
             <div class="col-sm-4 col-8 row d-flex justify-content-center ">
-              <div class="col-12 fw-bold mb-md-2 custom-menu-title text-center">Depot Kita</div>
+              <div class="col-12 fw-bold mb-md-2 custom-menu-title text-center">P ~ Depot Kita</div>
               <div class="col-12 d-flex justify-content-center">
                 <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
               </div>
-              <div class="col-12 fw-bold custom-menu-date text-center">23 Agustus 2024</div>
+              <div class="col-12 fw-bold custom-menu-date text-center">27 May 2024</div>
             </div>
             <div class="col-sm-8 col-4 d-flex align-items-center">
               <div class="d-flex align-items-center" style="max-height: 12rem">
@@ -127,29 +132,29 @@
               </div>
             </div>
             <div class="col-12 d-flex align-items-center justify-content-center justify-content-sm-end text-center mt-4">
-              <a href="mahasiswa_keranjang.php" class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow">Pesan Lagi</a>
+              <a href="mahasiswa_keranjang2.php" class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow">Pesan Lagi</a>
             </div>
           </div>
 
           <hr>
 
-          <div class="col-12 row mt-3 mb-2 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan" id="">
+          <div class="col-12 row mt-3 mb-2 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan3" id="">
             <div class="col-12 row d-flex align-items-center justify-content-center text-center mb-3">
               <div class="bg-success text-light col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button">Selesai</div>
             </div>
             <div class="col-sm-4 col-8 row d-flex justify-content-center ">
-              <div class="col-12 fw-bold mb-md-2 custom-menu-title text-center">Depot Kita</div>
+              <div class="col-12 fw-bold mb-md-2 custom-menu-title text-center">T ~ Bakso Sapi'i</div>
               <div class="col-12 d-flex justify-content-center">
-                <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
+                <img src="../../resource/assets/assets_lama/kantin/toko/kantinT2.jpg" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
               </div>
-              <div class="col-12 fw-bold custom-menu-date text-center">29 Februari 2024</div>
+              <div class="col-12 fw-bold custom-menu-date text-center">14 May 2024</div>
             </div>
             <div class="col-sm-8 col-4 d-flex align-items-center">
               <div class="d-flex align-items-center" style="max-height: 12rem">
                 <div class="row align-items-center gap-1">
-                  <div class="col-12 custom-menu-desc">2 x Ayam geprek </div>
-                  <div class="col-12 custom-menu-desc">2 x Es teh</div>
-                  <div class="col-12 fw-bold custom-menu-price">Total: Rp. 60.000</div>
+                  <div class="col-12 custom-menu-desc">1 x Bakso campur </div>
+                  <div class="col-12 custom-menu-desc">1 x Es campur</div>
+                  <div class="col-12 fw-bold custom-menu-price">Total: Rp. 58.000</div>
                 </div>
               </div>
             </div>
@@ -179,7 +184,7 @@
   <!-- Floating Button -->
 
   <!-- Modal -->
-  <div class="modal fade" id="detailPesanan" tabindex="-1" aria-labelledby="detailPesananLabel" aria-hidden="true">
+  <div class="modal fade" id="detailPesanan1" tabindex="-1" aria-labelledby="detailPesananLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -205,7 +210,72 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="detailPesanan2" tabindex="-1" aria-labelledby="detailPesananLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Excelso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container row">
+            <div class="col-12 mb-3 fw-bold fs-5">List Pesanan :</div>
+            <ul class="col-7 ms-3 gap-4 ">
+              <li class="col-12">2 x Ayam geprek</li>
+              <li class="col-12">2 x Es teh</li>
+            </ul>
+            <div class="col-12 fw-bold fs-5">Catatan : </div>
+            <div class="col-12">Sambal dibanyakin, es teh manis</div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="detailPesanan3" tabindex="-1" aria-labelledby="detailPesananLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Excelso</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container row">
+            <div class="col-12 mb-3 fw-bold fs-5">List Pesanan :</div>
+            <ul class="col-7 ms-3 gap-4 ">
+              <li class="col-12">1 x Bakso campur</li>
+              <li class="col-12">1 x Es campur</li>
+            </ul>
+            <div class="col-12 fw-bold fs-5">Catatan : </div>
+            <div class="col-12">Bakso tanpa sayur, es campur banyakin susu</div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript -->
+  <script>
+    // Function to change the status after 2 minutes
+    setTimeout(() => {
+      document.getElementById('orderStatus').innerHTML = 'Selesai';
+      document.getElementById('orderStatus').classList.remove('bg-warning');
+      document.getElementById('orderStatus').classList.add('bg-success', 'text-light');
+      document.getElementById('pesanLagiContainer1').style.display = 'flex';
+    }, 10000); 
+  </script>
   <script type="text/javascript" src="../../resource/js/mahasiswa_toko.js"></script>
   <script type="text/javascript" src="../../resource/js/mahasiswa_login.js"></script>
   <script type="text/javascript" src="../../resource/js/navbar.js"></script>

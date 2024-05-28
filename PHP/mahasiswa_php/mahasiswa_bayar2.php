@@ -151,7 +151,7 @@
         }).then((result) => {
           if (result.isConfirmed) {
             setTimeout(function() {
-              window.location = "mahasiswa_riwayat.php";
+              window.location = "mahasiswa_riwayat2.php";
             }, 300);
           }
         });

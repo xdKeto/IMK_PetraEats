@@ -151,8 +151,8 @@ if (isset($_POST['counter6'])) {
         <div class="col-6 d-flex align-items-center justify-content-end custom-price-card fw-bold">Total Biaya :</div>
         <div class="col-6 d-flex align-items-center justify-content-start ps-4 custom-price-card fw-bold">Rp. 75.000</div>
       </div>
-      <div id="bayarBtn" class="col-12 row d-flex justify-content-sm-end justify-content-center mt-3">
-        <a class="col-sm-3 col-8 btn pt-2 pb-2 fs-3 fw-bold text-light" style="background-color: #003662">Bayar</a>
+      <div class="col-12 row d-flex justify-content-sm-end justify-content-center mt-3">
+        <a id="bayarBtn" class="col-sm-3 col-8 btn pt-2 pb-2 fs-3 fw-bold text-light" style="background-color: #003662">Bayar</a>
       </div>
     </div>
   </div>
