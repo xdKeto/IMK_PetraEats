@@ -71,7 +71,7 @@ function confirmLogout() {
   }).then((result) => {
     if (result.isConfirmed) {
       setTimeout(function () {
-        window.location = "../mahasiswa/mahasiswa_login.php";
+        window.location = "../mahasiswa_php/mahasiswa_login.php";
       }, 800);
     }
   });
