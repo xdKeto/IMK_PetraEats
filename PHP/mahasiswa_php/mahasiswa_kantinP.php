@@ -107,7 +107,7 @@
         </div>
       </a>
 
-      <a href="#" class="col-lg-3 col-sm-6 col-12 d-flex justify-content-center mt-lg-3 mt-5">
+      <a href="mahasiswa_depotkita.php" class="col-lg-3 col-sm-6 col-12 d-flex justify-content-center mt-lg-3 mt-5">
         <div class="card shadow rounded-3" style="width: 20rem">
           <div class="container mt-2">
             <div class="image-container mt-1">

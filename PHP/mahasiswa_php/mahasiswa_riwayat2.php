@@ -105,7 +105,7 @@
                             </div>
                         </div>
                         <div class="col-12 d-flex align-items-center justify-content-center justify-content-sm-end text-center mt-4" style="display: none;">
-                            <a id="pesanLagiContainer1" href="mahasiswa_keranjang.php" class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow" style="display: none;">Pesan Lagi</a>
+                            <a id="pesanLagiContainer1" href="mahasiswa_keranjang2.php" class="btn btn-primary text-light rounded-4 p-2 ps-4 pe-4 fw-bold shadow" style="display: none;">Pesan Lagi</a>
                         </div>
                     </div>
 
