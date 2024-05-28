@@ -73,7 +73,7 @@
   <div class="container mb-5" style="margin-top: 10rem">
     <!-- Button and Title -->
     <div class="row d-flex justify-content-between">
-      <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_kantinQ.php">Back</a>
+      <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_landing_page.php">Back</a>
       <div class="nama-toko col-lg-10 col-12 fw-bold text-center">Riwayat Pesanan</div>
     </div>
     <!-- Button and Title -->
@@ -115,7 +115,7 @@
               <div class="col-12 d-flex justify-content-center">
                 <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
               </div>
-              <div class="col-12 fw-bold custom-menu-date text-center">21 Desember 2024</div>
+              <div class="col-12 fw-bold custom-menu-date text-center">23 Agustus 2024</div>
             </div>
             <div class="col-sm-8 col-4 d-flex align-items-center">
               <div class="d-flex align-items-center" style="max-height: 12rem">
@@ -142,7 +142,7 @@
               <div class="col-12 d-flex justify-content-center">
                 <img src="../../resource/assets/assets_lama/kantin/toko/kantinP3.png" class=" float-start rounded-2 border border-black" style="max-width: 80%; max-height: 80%;" />
               </div>
-              <div class="col-12 fw-bold custom-menu-date text-center">21 Desember 2024</div>
+              <div class="col-12 fw-bold custom-menu-date text-center">29 Februari 2024</div>
             </div>
             <div class="col-sm-8 col-4 d-flex align-items-center">
               <div class="d-flex align-items-center" style="max-height: 12rem">
