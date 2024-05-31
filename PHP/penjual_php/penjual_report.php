@@ -64,11 +64,11 @@
                             <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
                         </li>
                         <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-                            <a href="penjual_landing_page.php" class="navbar-brand nav-link mb-0 fs-5 position-relative bg-light rounded rounded-3 ps-3 pe-3 text-dark" style="font-family: var(--font-family-1)"><i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                            <a href="penjual_landing_page.php" class="navbar-brand nav-link mb-0 fs-5 position-relative " style="font-family: var(--font-family-1)"><i class="fa fa-pencil" aria-hidden="true"></i> Edit
                             </a>
                         </li>
                         <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-                            <a href="penjual_report.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1)"><i class="fa fa-file" aria-hidden="true"></i> Report </a>
+                            <a href="penjual_report.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded bg-light rounded rounded-3 ps-3 pe-3 text-dark" style="font-family: var(--font-family-1)"><i class="fa fa-file" aria-hidden="true"></i> Report </a>
                         </li>
                         <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
                             <div class="dropdown">
@@ -90,97 +90,37 @@
     <div class="container mb-5" style="margin-top: 10rem">
         <!-- Button and Title -->
         <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center fw-bold" style="font-size: 4rem">Menu Utama</div>
+            <div class="col-12 d-flex justify-content-center fw-bold" style="font-size: 4rem">Laporan Penjualan</div>
         </div>
         <!-- Button and Title -->
 
         <!-- MENU -->
-        <div class="row mt-5 d-flex justify-content-center ps-lg-2 gap-sm-0 gap-4">
-            <div class="col-lg-6 col-xl-4 col-12">
-                <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
-                    <div class="col-6 p-2">
-                        <img src="..\..\resource\assets\assets_lama\foods\excelso1.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
-                    </div>
-                    <div class="col-6 mt-4 pb-3">
-                        <div style="height: 12rem">
-                            <h4 class="">Cookies and Cream</h4>
-                            <p class="">Iced blended cookies and cream</p>
-                            <p class="">Rp. 25.000</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="row d-flex mt-5 justify-content-sm-between justify-content-center gap-3">
+            <div class="col-sm-3 row d-flex justify-content-center align-items-center p-4 border border-primary border-3 bg-light">
+                <div class="col-12 text-center fs-5 fw-bold">Jumlah Uang Masuk Total</div>
+                <div class="col-12 text-center fw-bold">Rp. 200.562.000</div>
             </div>
-            <div class="col-lg-6 col-xl-4 col-12">
-                <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
-                    <div class="col-6 p-2">
-                        <img src="..\..\resource\assets\assets_lama\foods\excelso2.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
-                    </div>
-                    <div class="col-6 mt-4 pb-3">
-                        <div style="height: 12rem">
-                            <h4 class="">Choco Chip</h4>
-                            <p class="">Minuman coklat dengan topping choco chip</p>
-                            <p class="">Rp. 27.000</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-4 row d-flex justify-content-center align-items-center p-4 border border-warning border-3 bg-light">
+                <div class="col-12 text-center fs-5 fw-bold">Jumlah Uang Masuk Bulan Ini</div>
+                <div class="col-12 text-center fw-light">Terhitung dari tanggal 1 bulan ini</div>
+                <div class="col-12 text-center fw-bold">Rp. 15.562.000</div>
             </div>
-            <div class="col-lg-6 col-xl-4 col-12">
-                <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
-                    <div class="col-6 p-2">
-                        <img src="..\..\resource\assets\assets_lama\foods\excelso3.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
-                    </div>
-                    <div class="col-6 mt-4 pb-3">
-                        <div style="height: 12rem">
-                            <h4 class="">Caramel Jelly Latte</h4>
-                            <p class="">Caramel latte dengan topping jelly</p>
-                            <p class="">Rp. 50.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4 col-12">
-                <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
-                    <div class="col-6 p-2">
-                        <img src="..\..\resource\assets\assets_lama\foods\excelso4.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
-                    </div>
-                    <div class="col-6 mt-4 pb-3">
-                        <div style="height: 12rem">
-                            <h4 class="">Iced Coffee</h4>
-                            <p class="">Iced brewed coffee</p>
-                            <p class="">Rp. 28.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4 col-12">
-                <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
-                    <div class="col-6 p-2">
-                        <img src="..\..\resource\assets\assets_lama\foods\excelso5.png" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
-                    </div>
-                    <div class="col-6 mt-4 pb-3">
-                        <div style="height: 12rem">
-                            <h4 class="">Lychee Tea</h4>
-                            <p class="">Minuman teh dengan tambahan buah lychee</p>
-                            <p class="">Rp. 25.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4 col-12">
-                <div class="m-3 bg-light rounded-3 shadow d-flex justify-content-start justify-content-md-center">
-                    <div class="col-6 p-2">
-                        <img src="..\..\resource\assets\assets_lama\foods\excelso6.jpg" style="max-width: 12rem" class="card-img-top rounded-2 mt-4" />
-                    </div>
-                    <div class="col-6 mt-4 pb-3">
-                        <div style="height: 12rem">
-                            <h4 class="">Matcha Pearl</h4>
-                            <p class="">Matcha dan pearl</p>
-                            <p class="">Rp. 32.000</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-3 row d-flex justify-content-center align-items-center p-4 border border-danger border-3 bg-light">
+                <div class="col-12 text-center fs-5 fw-bold">Jumlah Uang Masuk Hari Ini</div>
+                <div class="col-12 text-center fw-bold">Rp. 2.000.000</div>
             </div>
         </div>
+
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-6 d-flex justify-content-center">
+                <img src="../../resource/assets/report/Grafik_Pertahun.JPG" class="border border-black border-3" style="max-width:80%">
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <img src="../../resource/assets/report/Grafik_Perhari.JPG" class="border border-black border-3" style="max-width:80%">
+            </div>
+        </div>
+
+
         <!-- MENU -->
     </div>
 
