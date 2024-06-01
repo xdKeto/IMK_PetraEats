@@ -1,20 +1,16 @@
-<!-- Navbar -->
-<!-- <div class="col-3 row pt-4 d-flex align-items-start" style="background-color: var(--title-color); height: 100%; position: fixed">
-      <div class="col-12 row">
-        <div class="col-10 d-flex align-items-center justify-content-center">
-          <a href="penjual_landing_page.html" style="text-decoration: none">
-            <img src="../../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" style="width: 4rem" />
-            <span class="navbar-brand ms-3 mb-0 fs-4 text-white" style="font-family: var(--font-family-1)">Petra Eats</span>
-          </a>
-        </div>
-        <div class="col-2 d-flex align-items-center mb-2 justify-content-end">
-          <button class="navbar-toggler text-white">
-            <span class="text-white fs-4"><i class="fa fa-bars" aria-hidden="true"></i></span>
-          </button>
-        </div>
-      </div>
-    </div> -->
-<!-- End Navbar -->
+<?php
+
+// session_start();
+
+function createReport()
+{
+
+    // return [$moneyTotal, $moneyMonth, $moneyDays, $graphYear, $graphDays];
+}
+
+// $dataForGraph = createReport($_SESSION["dataTransaksi"]);
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -90,33 +86,44 @@
     <div class="container mb-5" style="margin-top: 10rem">
         <!-- Button and Title -->
         <div class="row d-flex justify-content-center">
-            <div class="col-12 d-flex justify-content-center fw-bold" style="font-size: 4rem">Laporan Penjualan</div>
+            <div class="col-md-10 col-12 d-flex justify-content-center fw-bold text-center" style="font-size: 4rem">Laporan Penjualan</div>
         </div>
         <!-- Button and Title -->
 
         <!-- MENU -->
-        <div class="row d-flex mt-5 justify-content-sm-between justify-content-center gap-3">
-            <div class="col-sm-3 row d-flex justify-content-center align-items-center p-4 border border-primary border-3 bg-light">
+        <div class="row d-flex mt-5 justify-content-sm-between justify-content-center gap-3 bg-danger border border-3 p-4 rounded rounded-5">
+            <div class="col-sm-3 row d-flex justify-content-center align-items-center p-4 border border-dark border-3 bg-light">
                 <div class="col-12 text-center fs-5 fw-bold">Jumlah Uang Masuk Total</div>
                 <div class="col-12 text-center fw-bold">Rp. 200.562.000</div>
+                <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[0] ></div> -->
             </div>
-            <div class="col-sm-4 row d-flex justify-content-center align-items-center p-4 border border-warning border-3 bg-light">
+            <div class="col-sm-4 row d-flex justify-content-center align-items-center p-4 border border-dark border-3 bg-light">
                 <div class="col-12 text-center fs-5 fw-bold">Jumlah Uang Masuk Bulan Ini</div>
                 <div class="col-12 text-center fw-light">Terhitung dari tanggal 1 bulan ini</div>
                 <div class="col-12 text-center fw-bold">Rp. 15.562.000</div>
+                <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[1] ></div> -->
             </div>
-            <div class="col-sm-3 row d-flex justify-content-center align-items-center p-4 border border-danger border-3 bg-light">
+            <div class="col-sm-3 row d-flex justify-content-center align-items-center p-4 border border-dark border-3 bg-light">
                 <div class="col-12 text-center fs-5 fw-bold">Jumlah Uang Masuk Hari Ini</div>
                 <div class="col-12 text-center fw-bold">Rp. 2.000.000</div>
+                <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[2] ></div> -->
             </div>
         </div>
 
-        <div class="row mt-5 d-flex justify-content-center">
-            <div class="col-6 d-flex justify-content-center">
-                <img src="../../resource/assets/report/Grafik_Pertahun.JPG" class="border border-black border-3" style="max-width:80%">
+        <div class="row mt-5 d-flex justify-content-center rounded rounded-5 bg-danger border border-3 p-5">
+            <div class="col-6 row d-flex justify-content-center">
+                <div class="col-12 fw-bold fs-3 text-light text-center">Grafik Pertahun</div>
+                <div class="col-12 text-center">
+                    <img src="../../resource/assets/report/Grafik_Pertahun.JPG" class="border border-black border-3" style="max-width:80%">
+                    <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[3] ></div> -->
+                </div>
             </div>
-            <div class="col-6 d-flex justify-content-center">
-                <img src="../../resource/assets/report/Grafik_Perhari.JPG" class="border border-black border-3" style="max-width:80%">
+            <div class="col-6 row d-flex justify-content-center">
+                <div class="col-12 fw-bold fs-3 text-light text-center">Grafik Perhari</div>
+                <div class="col-12 text-center">
+                    <img src="../../resource/assets/report/Grafik_Perhari.JPG" class="border border-black border-3" style="max-width:80%">
+                    <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[4] ></div> -->
+                </div>
             </div>
         </div>
 

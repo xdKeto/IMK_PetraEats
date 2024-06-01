@@ -1,21 +1,3 @@
-<!-- Navbar -->
-<!-- <div class="col-3 row pt-4 d-flex align-items-start" style="background-color: var(--title-color); height: 100%; position: fixed">
-      <div class="col-12 row">
-        <div class="col-10 d-flex align-items-center justify-content-center">
-          <a href="penjual_landing_page.html" style="text-decoration: none">
-            <img src="../../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" style="width: 4rem" />
-            <span class="navbar-brand ms-3 mb-0 fs-4 text-white" style="font-family: var(--font-family-1)">Petra Eats</span>
-          </a>
-        </div>
-        <div class="col-2 d-flex align-items-center mb-2 justify-content-end">
-          <button class="navbar-toggler text-white">
-            <span class="text-white fs-4"><i class="fa fa-bars" aria-hidden="true"></i></span>
-          </button>
-        </div>
-      </div>
-    </div> -->
-<!-- End Navbar -->
-
 <!DOCTYPE html>
 <html lang="en">
 

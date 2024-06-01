@@ -2,22 +2,21 @@
 require_once "../../connect.php";
 
 
-class Transaksi{
+class Transaksi
+{
     private $ID_Transaksi;
     private $totalHarga;
     private $statusPesanan;
 
-    function setStatusPesanan($msg){
-        
+
+    function setStatusPesanan($msg)
+    {
     }
 
-    function getStatusPesanan(){
-
+    function getStatusPesanan()
+    {
     }
-    function getTransaksi(){
-
+    function getTransaksi()
+    {
     }
-
 }
-
-?>
