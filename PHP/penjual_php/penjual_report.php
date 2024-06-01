@@ -56,17 +56,21 @@ function createReport()
             <div class="col-lg-8 col-12">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav col-12 row d-flex justify-content-end align-items-center ms-sm-0 ms-2">
-                        <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-                            <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
-                        </li>
-                        <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-                            <a href="penjual_landing_page.php" class="navbar-brand nav-link mb-0 fs-5 position-relative " style="font-family: var(--font-family-1)"><i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                        <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
+                            <a href="penjual_home_page.php" class="navbar-brand nav-link mb-0 fs-5 position-relative " style="font-family: var(--font-family-1)"><i class="fa fa-pencil" aria-hidden="true"></i> Home
                             </a>
                         </li>
-                        <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
+                        <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
+                            <a href="#" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
+                        </li>
+                        <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
+                            <a href="penjual_edit_page.php" class="navbar-brand nav-link mb-0 fs-5 position-relative " style="font-family: var(--font-family-1)"><i class="fa fa-pencil" aria-hidden="true"></i> Edit
+                            </a>
+                        </li>
+                        <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
                             <a href="penjual_report.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded bg-light rounded rounded-3 ps-3 pe-3 text-dark" style="font-family: var(--font-family-1)"><i class="fa fa-file" aria-hidden="true"></i> Report </a>
                         </li>
-                        <li class="nav-item col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
+                        <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
                             <div class="dropdown">
                                 <div class="navbar-brand nav-link mb-0 fs-5 dropbtn d-flex justify-content-center" style="font-family: var(--font-family-1)" id="navitem" onclick="logoutDropdown()">
                                     <img class="rounded-circle dropbtn" style="max-width: 55px" src="../../resource/assets/assets_lama/mahasiswa/profile/Default.jpg" style="z-index: 2" />
