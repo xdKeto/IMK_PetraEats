@@ -12,9 +12,7 @@ class Transaksi
 
     function setStatusPesanan($msg, $id_transaksi)
     {
-<<<<<<< Updated upstream
         $this->statusPesanan = $msg;
-=======
 
         // $this->statusPesanan = 0;
         // if($msg == 'Konfirmasi') {
@@ -34,7 +32,6 @@ class Transaksi
         // $stmt = $pdo->prepare($sql);
         // $stmt->execute([$id_transaksi]);
         
->>>>>>> Stashed changes
     }
 
     function getStatusPesanan()
