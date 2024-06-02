@@ -2,17 +2,27 @@
 
 // session_start();
 include_once "../class/Transaksi.php";
+include_once "../class/DetailTransaksi.php";
 
-$Transaksi = new Transaksi();
-$listDataTransaksi = $Transaksi->getTransaksi($SESSION["ID_Toko"]);
 
 function showReport()
 {
+    // $Transaksi = new Transaksi();
+    // $DetailTransaksi = new DetailTransaksi();
+
+    // $listDataTransaksi = $Transaksi->getTransaksi($SESSION["ID_Toko"]);
+    // $listDataDetailTransaksi = $DetailTransaksi->getDetailTransaksi($SESSION["ID_Toko"]);
+
+    // 
+    // OLAH DATA TRANSAKSI DAN DATA DETAIL TRANSAKSI 
+    // 
 
     // return [$moneyTotal, $moneyMonth, $moneyDays, $graphYear, $graphDays];
 }
 
-// $dataForGraph = showReport($_SESSION["dataTransaksi"]);
+// $dataForGraph = showReport();
+
+
 
 ?>
 
