@@ -38,6 +38,7 @@ class Transaksi
     function getStatusPesanan()
     {
     }
+    
     function getTransaksi($id_toko)
     {
         // $sql = "SELECT * FROM Transaksi WHERE list_toko_id_toko=?";
