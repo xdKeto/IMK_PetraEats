@@ -11,7 +11,7 @@ class Transaksi
 
     function setStatusPesanan($msg)
     {
-        // $this->statusPesanan = $msg;
+        $this->statusPesanan = $msg;
     }
 
     function getStatusPesanan()
@@ -51,5 +51,14 @@ class Transaksi
         // $this->buktiBayar = "Proof of payment saved successfully."; // can be other type like file, img, etc.
     }
 
+    function Bayar($id)
+    {
+        // // Check if the transaction is valid
+        // if ($this->cekTransaksi($id)) {
+        //     // Retrieve the transaction
+        //     $transaction = $this->getTransaksi($id);
 
+        //     $transaction->setStatusPesanan('Proses');
+        // }
+    }
 }
