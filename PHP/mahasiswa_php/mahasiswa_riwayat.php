@@ -179,11 +179,12 @@
   <!-- Floating Button -->
   <div class="floating-button">
     <a id="cekKeranjang" class="btn btn-keranjang fw-bold" href="mahasiswa_keranjang.php">
-      <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-      <span id="cart-alert-bottom-left" class="position-absolute start-1 translate-middle p-2 bg-danger border border-light rounded-circle" style="display: none; top: 13px">
-        <span class="visually-hidden">New alerts</span>
-      </span>
-    </a>
+      <a id="cekKeranjang" class="btn btn-keranjang fw-bold" href="mahasiswa_keranjang.php">
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        <span id="cart-alert-bottom-left" class="position-absolute start-1 translate-middle p-2 bg-danger border border-light rounded-circle" style="display: none; top: 13px">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </a>
   </div>
   <!-- Floating Button -->
 

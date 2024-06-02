@@ -2,22 +2,21 @@
 
 // session_start();
 include_once "../class/Transaksi.php";
-include_once "../class/DetailTransaksi.php";
 
+$currentDate = date("Y-m-d");
+$_SESSION["current_date"] = $currentDate;
 
 function showReport()
 {
     // $Transaksi = new Transaksi();
     // $DetailTransaksi = new DetailTransaksi();
 
-    // $listDataTransaksi = $Transaksi->getTransaksi($SESSION["ID_Toko"]);
-    // $listDataDetailTransaksi = $DetailTransaksi->getDetailTransaksi($SESSION["ID_Toko"]);
-
-    // 
-    // OLAH DATA TRANSAKSI DAN DATA DETAIL TRANSAKSI 
-    // 
-
-    // return [$moneyTotal, $moneyMonth, $moneyDays, $graphYear, $graphDays];
+    // $moneyTotal= $Transaksi->getTransaksiTotal($SESSION["ID_Toko"]);
+    // $moneyMonth = $Transaksi->getTransaksiThisMonth($SESSION["ID_Toko"]);
+    // $moneyDay = $Transaksi->getTransaksiThisDay($SESSION["ID_Toko"], $_SESSION["current_date"]);
+    // $graphYear = $Transaksi->getDataGraphYear($SESSION["ID_Toko"]);
+    // $graphDays = $Transaksi->getDataGraphWeek($SESSION["ID_Toko"]);
+    // return [$moneyTotal, $moneyMonth, $moneyDay, $graphYear, $graphDays];
 }
 
 // $dataForGraph = showReport();
@@ -133,6 +132,7 @@ function showReport()
                 <div class="col-12 fw-bold fs-3 text-light text-center">Grafik Pertahun</div>
                 <div class="col-12 text-center">
                     <img src="../../resource/assets/report/Grafik_Pertahun.JPG" class="border border-black border-3" style="max-width:80%">
+                    <!-- Create Graph Based on this data  -->
                     <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[3] ></div> -->
                 </div>
             </div>
@@ -140,6 +140,7 @@ function showReport()
                 <div class="col-12 fw-bold fs-3 text-light text-center">Grafik Perhari</div>
                 <div class="col-12 text-center">
                     <img src="../../resource/assets/report/Grafik_Perhari.JPG" class="border border-black border-3" style="max-width:80%">
+                    <!-- Create Graph Based on this data  -->
                     <!-- <div class="col-12 text-center fw-bold"> $dataForGraph[4] ></div> -->
                 </div>
             </div>
