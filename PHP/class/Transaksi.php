@@ -7,10 +7,11 @@ class Transaksi
     private $ID_Transaksi;
     private $totalHarga;
     private $statusPesanan;
-
+    private $buktiBayar;
 
     function setStatusPesanan($msg)
     {
+        // $this->statusPesanan = $msg;
     }
 
     function getStatusPesanan()
@@ -29,7 +30,26 @@ class Transaksi
         // }
     }
 
-    function Bayar()
+    function cekTransaksi($id)
     {
+        // // Retrieve the transaction
+        // $transaction = $this->getTransaksi($id);
+
+        // if ($transaction) {
+        //     if ($transaction['statusPesanan'] !== 'Paid') {
+        //         return true;
+        //     } else {
+        //         return false; 
+        //     }
+        // } else {
+        //     return false;
+        // }
     }
+
+    function newBukti($msg)
+    {
+        // $this->buktiBayar = "Proof of payment saved successfully."; // can be other type like file, img, etc.
+    }
+
+
 }
