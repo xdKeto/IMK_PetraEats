@@ -3,6 +3,9 @@
 // if (!isset($_POST['counter1'])) {
 //   header("Location: mahasiswa_landing_page.php");
 // }
+
+// $cartContents = setCart();
+
 $listPesanan = [];
 
 if (isset($_POST['counter1'])) {
@@ -30,6 +33,11 @@ if (isset($_POST['counter6'])) {
 }
 
 
+function setTransaksi(){
+  // $Transkasi = new Transaksi();
+
+  // $Transkasi->setTransaksi($cart);
+}
 ?>
 
 <!DOCTYPE html>

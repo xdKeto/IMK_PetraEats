@@ -8,7 +8,7 @@ function loadListTransaksi()
 {
     $Transaksi = new Transaksi();
 
-    //return [$Transaksi->getTransaksi()];
+    //return [$Transaksi->getListTransaksi()];
 }
 $listDataTransaksi = loadListTransaksi();
 

@@ -2,7 +2,11 @@
 require_once "../../connect.php";
 session_start();
 
+
+// $_SESSION['cart'] = getCart();
+
 ?>
+
 
 
 

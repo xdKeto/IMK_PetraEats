@@ -35,13 +35,55 @@ class Transaksi
 
     }
 
-    function getStatusPesanan()
+    function getStatusPesanan($id_transaksi)
     {
-    }
     
-    function getTransaksi($id_toko)
+        // $sql = "SELECT ID_StatusPesanan FROM transaksi WHERE id_transaksi = :id_transaksi";
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute([':id_transaksi' => $id_transaksi]);
+
+        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // if ($result) {
+        //     return $result['ID_StatusPesanan'];
+        // } else {
+        //     return false;
+        // }
+    }
+
+    function setTransaksi($cart) {
+    
+        // $sql = "INSERT INTO detail_transaksi (kuantitas, subtotalharga, id_transaksi, menu_id ) VALUES (?, ?, ?, ?)";
+        // $stmt = $pdo->prepare($sql);
+    
+        // $stmt->execute([
+        //     'menu_id' => $cart['menu_id'],
+        //     'kuantitas' => $cart['quantity'],
+        //     'harga' => $cart['price']
+        // ]);
+    
+        // if ($stmt->rowCount() > 0) {
+        //     return true; 
+        // } else {
+        //     return false; 
+        // }
+    }
+
+    function getListTransaksi($id_toko){
+        // $sql = "SELECT * FROM transaksi WHERE list_toko_id_toko=?";
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute([$id_toko]);
+        // $rowCount = $stmt->rowCount();
+        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // if ($rowCount > 0) {
+        //     return $result;
+        // }
+    }
+
+    function getTransaksi($id_transaksi)
     {
-        // $sql = "SELECT * FROM Transaksi WHERE list_toko_id_toko=?";
+        // $sql = "SELECT * FROM transaksi WHERE id_transaksi=?";
         // $stmt = $pdo->prepare($sql);
         // $stmt->execute([$id_toko]);
         // $rowCount = $stmt->rowCount();
@@ -170,5 +212,16 @@ class Transaksi
         // if ($rowCount > 0) {
         //     return $result;
         // }
+    }
+
+    function setCart() {
+        // if (isset($_SESSION['cart'])) {
+        //     return $_SESSION['cart'];
+        // }
+        // return [];
+    }
+
+    function confirmTransaksi(){
+        
     }
 }
