@@ -54,7 +54,7 @@
                             </a>
                         </li>
                         <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
-                            <a href="penjual_report.php" class="navbar-brand nav-link mb-0 fs-5 position-relative " style="font-family: var(--font-family-1)"><i class="fa fa-file" aria-hidden="true"></i> Report </a>
+                            <a onclick="moveToReport()" class="navbar-brand nav-link mb-0 fs-5 position-relative " style="font-family: var(--font-family-1)"><i class="fa fa-file" aria-hidden="true"></i> Report </a>
                         </li>
                         <li class="nav-item col-2 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
                             <div class="dropdown">
@@ -73,7 +73,7 @@
     </nav>
     <!-- Navbar -->
 
-    
+
 
     <div class="container mb-5" style="margin-top: 10rem">
         <!-- Button and Title -->
@@ -185,9 +185,14 @@
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <!-- JavaScript -->
     <script>
-        
+        function moveToReport() {
+            window.location.href = "penjual_report.php";
+        }
 
         // Function to update the currentDate div with the current date
         function updateCurrentDate() {
@@ -195,7 +200,11 @@
             var hours = String(currentDate.getHours()).padStart(2, '0');
             var minutes = String(currentDate.getMinutes()).padStart(2, '0');
 
-            var formattedDate = currentDate.toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' });
+            var formattedDate = currentDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit'
+            });
             document.getElementById('currentDate').textContent = formattedDate + ' - ' + '10:20';
             document.getElementById('currentDate').textContent = formattedDate + ' - ' + '13:20';
         }
@@ -204,7 +213,7 @@
         updateCurrentDate();
 
 
-   
+
         // Confirm Pesanan
         document.getElementById('acceptOrder').addEventListener('click', function() {
             var orderStatus = document.getElementById('orderStatus');

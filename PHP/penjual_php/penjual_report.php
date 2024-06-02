@@ -1,14 +1,18 @@
 <?php
 
 // session_start();
+include_once "../class/Transaksi.php";
 
-function createReport()
+$Transaksi = new Transaksi();
+$listDataTransaksi = $Transaksi->getTransaksi($SESSION["ID_Toko"]);
+
+function showReport()
 {
 
     // return [$moneyTotal, $moneyMonth, $moneyDays, $graphYear, $graphDays];
 }
 
-// $dataForGraph = createReport($_SESSION["dataTransaksi"]);
+// $dataForGraph = showReport($_SESSION["dataTransaksi"]);
 
 ?>
 

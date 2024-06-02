@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../resource/css/mainStyle.css" />
   <link rel="stylesheet" href="../../resource/css/mahasiswa_navbar.css" />
   <link rel="stylesheet" href="../../resource/css/mahasiswa_riwayat.css" />
+
   <link rel="icon" type="image/x-icon" href="../../resource/assets/assets_lama/logoPetraEats/logoPetraEats.png" />
 </head>
 
@@ -46,7 +47,8 @@
               <a href="#" class="navbar-brand nav-link mb-0 fs-5 position-relative bg-light rounded" style="font-family: var(--font-family-1); color: #003662" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
             <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4 shake">
-            <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
+              <a href="mahasiswa_keranjang.php" class="navbar-brand nav-link mb-0 fs-5 position-relative rounded" style="font-family: var(--font-family-1);" id="navitem-keranjang">
+
                 <i class="fa fa-shopping-basket"></i> Keranjang
                 <span id="cart-alert" class="position-absolute start-1 translate-middle p-1 bg-danger border border-light rounded-circle" style="display: none; top: 6px">
                   <span class="visually-hidden">New alerts</span>
@@ -75,15 +77,17 @@
     <div class="row d-flex justify-content-between">
       <a class="btn btn-danger back-button col-lg-2 col-12 fw-bold ms-3 mt-1 me-auto" href="mahasiswa_landing_page.php">Back</a>
       <div class="nama-toko col-lg-10 col-12 fw-bold text-center">Riwayat Pesanan</div>
+
     </div>
     <!-- Button and Title -->
 
     <!-- Content -->
     <div class="container row d-flex justify-content-center mt-5">
       <!-- Pesanan Aktif -->
+
       <div class="col-10 row d-flex justify-content-center border border-5 rounded-4 shadow mt-4 pb-5 ms-1 gap-3" style="background-color: #f2f8f9">
         <div class="col-12 d-flex justify-content-center row">
-        <div class="col-12 row mt-5 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan1" id="">
+          <div class="col-12 row mt-5 d-flex justify-content-center align-items-center pt-3 pb-5 custom-card-pesanan rounded-3" data-bs-toggle="modal" data-bs-target="#detailPesanan1" id="">
             <div class="col-12 row d-flex align-items-center justify-content-center text-center mb-3">
               <div id="orderStatus" class="bg-warning col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button">Permintaan</div>
             </div>
@@ -274,7 +278,7 @@
       document.getElementById('orderStatus').classList.remove('bg-warning');
       document.getElementById('orderStatus').classList.add('bg-success', 'text-light');
       document.getElementById('pesanLagiContainer1').style.display = 'flex';
-    }, 10000); 
+    }, 10000);
   </script>
   <script type="text/javascript" src="../../resource/js/mahasiswa_toko.js"></script>
   <script type="text/javascript" src="../../resource/js/mahasiswa_login.js"></script>

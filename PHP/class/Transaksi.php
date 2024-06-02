@@ -16,7 +16,11 @@ class Transaksi
     function getStatusPesanan()
     {
     }
-    function getTransaksi()
+    function getTransaksi($id)
+    {
+    }
+
+    function Bayar()
     {
     }
 }
