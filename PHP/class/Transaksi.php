@@ -68,7 +68,11 @@ class Transaksi
 
     function newBukti($msg)
     {
-        // $this->buktiBayar = "Proof of payment saved successfully."; // can be other type like file, img, etc.
+        // $sql = "UPDATE Pesanan SET buktiBayar=? WHERE id_pesanan=?";
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute([$buktiBayar, $id]);
+        // $rowCount = $stmt->rowCount();
+        // return $rowCount > 0;
     }
 
     function Bayar($id)
@@ -78,7 +82,7 @@ class Transaksi
         //     // Retrieve the transaction
         //     $transaction = $this->getTransaksi($id);
 
-        //     $transaction->setStatusPesanan('Proses');
+        //     $transaction->setStatusPesanan('Proses', $id);
         // }
     }
 
