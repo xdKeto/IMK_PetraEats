@@ -1,3 +1,51 @@
+<?php
+// session_start();
+include_once "../class/Transaksi.php";
+include_once "../class/DetailTransaksi.php";
+include_once "../class/Menu.php";
+
+function loadListTransaksi()
+{
+    $Transaksi = new Transaksi();
+
+    //return [$Transaksi->getTransaksi()];
+}
+$listDataTransaksi = loadListTransaksi();
+
+
+function loadDetailTransaksi() {
+    //untuk di modal
+    //id transaksi ngikut dri pesanan yg di klik pesanan yg mna, blm tau cara passing variablenya 🙏
+    $id_transaksi = 1;
+    $DetailTransaksi = new DetailTransaksi();
+
+    $listDetailTransaksi = $DetailTransaksi->getDetailTransaksi($id_transaksi);
+    //kuantitas, subtotalharga, id_transaksi, id_menu
+
+    //return $DetailTransaksi->getDetailTransaksi($id_transaksi);
+}
+$listDetailTransaksi = loadDetailTransaksi();
+
+
+function loadMenu() {
+    //list menu toko nnti di cek saat load di modal sesuai detail transaksi
+    $Menu = new Menu();
+    //$listMenu = $Menu->getMenu($SESSION["ID_Toko"]);
+    //id_menu, namamenu, harga, statustersedia, id_toko
+    
+    //return $Menu->getMenu($SESSION["ID_Toko"]);
+}
+$listMenu = loadMenu();
+
+
+function setStatusPesanan($msg, $id) {
+    $Transaksi = new Transaksi();
+
+    $Transaksi->setStatusPesanan($msg, $id);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,41 +133,76 @@
         <!-- pesanan masuk -->
         <div class="container row mt-3 d-flex justify-content-center gap-5">
 
+            <?php /* foreach ($listDataTransaksi  as $transaksi): */ ?>
             <div class="col-4 row d-flex justify-content-center border border-5 rounded-4 shadow mt-4 ms-1 gap-3" style="background-color: #f2f8f9">
                 <div class="col-12 d-flex justify-content-center row">
                     <div class="col-12 row mt-3 mb-2 d-flex justify-content-center align-items-center pt-3 pb-3 custom-card-pesanan rounded-3">
                         <div class="col-12 row d-flex align-items-center justify-content-center text-center mb-3">
+                            <?php /*
+                                $statusClass = '';
+                                $statusText = '';
+
+                                if ($transaksi['ID_statuspesanan'] == 1) {
+                                    $statusClass = 'bg-warning';
+                                    $statusText = 'Konfirmasi';
+                                } elseif ($transaksi['ID_statuspesanan'] == 2) {
+                                    $statusClass = 'bg-info';
+                                    $statusText = 'Menunggu dibayar';
+                                } elseif ($transaksi['ID_statuspesanan'] == 3) {
+                                    $statusClass = 'bg-danger';
+                                    $statusText = 'Pesanan ditolak';
+                                } elseif ($transaksi['ID_statuspesanan'] == 4) {
+                                    $statusClass = 'bg-primary';
+                                    $statusText = 'Proses';
+                                } elseif ($transaksi['ID_statuspesanan'] == 5) {
+                                    $statusClass = 'bg-success';
+                                    $statusText = 'Pesanan selesai';
+                                } else {
+                                    $statusClass = 'bg-secondary';
+                                    $statusText = 'Status tidak diketahui';
+                                } */
+                                ?>
+                            <?php /* <div id="orderStatus" class="<?= $statusClass ?> col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button"><?= $statusText ?></div> */?>
                             <div id="orderStatus" class="bg-warning col-12 rounded-4 p-2 ps-4 pe-4 fw-bold text-center" disabled data-bs-toggle="button">Permintaan</div>
                         </div>
                         <div class="col-12 row d-flex align-items-center border border-2 rounded-3">
                             <div class=" col-5 row d-flex justify-content-center">
-                                <div class="col-12 d-flex justify-content-center mt-4">
+                                <div class="col-12 d-flex justify-content-center fw-bold mb-md-2 mt-1">C14220123</div>
+                                <div class="col-12 d-flex justify-content-center">
                                     <img src="../../resource/assets/assets_lama/mahasiswa/profile/Ryan@gmail.com.jpg" class=" float-start rounded-2 border border-black" style="max-width: 70%; max-height: 70%;" />
                                 </div>
+                                
                             </div>
                             <div class=" col-8 row d-flex justify-content-start mb-2 mt-2">
-                                <div class="col-12 fw-bold mb-md-2 custom-menu-title">01 - C14220123</div>
+                                <?php /* <div class="col-12 fw-bold mb-md-2 ">Pesanan <?= $transaksi['id_transaksi'] ?> </div> */ ?>
+                                <div class="col-12 fw-bold mb-md-2" >Pesanan 01</div>
+                                <?php /* <div class="col-12 mb-md-2 custom-menu-date">$transaksi['tanggal']</div> */ ?>
                                 <div class="col-12 mb-md-2 custom-menu-date" id="currentDate"></div>
                                 <div class="col-12 fw-bold">
-                                    <button id="lihatPesananBtn" class="btn btn-sm fw-bold" style="color: white; background-color: #003662" data-bs-toggle="modal" data-bs-target="#detailPesanan1">Lihat pesanan</button>
+                                    <button id="lihatPesananBtn" class="btn btn-sm fw-bold" style="color: white; background-color: #003662" 
+                                    data-bs-toggle="modal" data-bs-target="#detailPesanan1"
+                                    onclick="openModal(`<?=$transaksi['id_transaksi']?>`)">Lihat pesanan</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php /* endforeach; */ ?> 
 
 
         </div>
         <!-- pesanan masuk -->
     </div>
 
-
     <!-- Modal -->
     <div class="modal fade" id="detailPesanan1" tabindex="-1" aria-labelledby="detailPesananLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <?php /* foreach ($listDataTransaksi  as $transaksi): */ ?>
+                    <?php /* <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Pesanan <?= $transaksi['id_transaksi'] ?> </h1>*/ ?>
+                    <?php /* endforeach; */ ?> 
                     <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Pesanan 01</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>

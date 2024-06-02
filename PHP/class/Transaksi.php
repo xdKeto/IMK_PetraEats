@@ -8,20 +8,43 @@ class Transaksi
     private $totalHarga;
     private $statusPesanan;
     private $buktiBayar;
+    private $tanggal;
 
-    function setStatusPesanan($msg)
+    function setStatusPesanan($msg, $id_transaksi)
     {
+<<<<<<< Updated upstream
         $this->statusPesanan = $msg;
+=======
+
+        // $this->statusPesanan = 0;
+        // if($msg == 'Konfirmasi') {
+        //     $this->statusPesanan = 1;
+        // } else if($msg == 'Menunggu Bayar') {
+        //     $this->statusPesanan = 2;
+        // } else if($msg == 'Ditolak') {
+        //     $this->statusPesanan = 3;
+        // } else if($msg == 'Proses') {
+        //     $this->statusPesanan = 4;
+        // } else if($msg == 'Selesai') {
+        //     $this->statusPesanan = 5;
+        // }
+
+        
+        // $sql = "UPDATE transaksi SET ID_StatusPesanan = $this->statusPesanan WHERE id_transaksi =?"
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute([$id_transaksi]);
+        
+>>>>>>> Stashed changes
     }
 
     function getStatusPesanan()
     {
     }
-    function getTransaksi($id)
+    function getTransaksi($id_toko)
     {
-        // $sql = "SELECT * FROM Transaksi WHERE id_transaksi=?";
+        // $sql = "SELECT * FROM Transaksi WHERE list_toko_id_toko=?";
         // $stmt = $pdo->prepare($sql);
-        // $stmt->execute([$id]);
+        // $stmt->execute([$id_toko]);
         // $rowCount = $stmt->rowCount();
         // $result = $stmt->fetch(PDO::FETCH_ASSOC);
 

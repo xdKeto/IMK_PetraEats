@@ -11,12 +11,16 @@ class Menu {
     }
 
     function getNamaMenu(){
+<<<<<<< Updated upstream
         // $sql = "SELECT * FROM menu WHERE namamenu=?";
         // $stmt = $this->pdo->prepare($sql);
         // $stmt->execute([$this->namaMenu]);
         // $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
         // return $result;
+=======
+    
+>>>>>>> Stashed changes
     }
 
     function setHarga($Harga){
@@ -79,6 +83,18 @@ class Menu {
 
     function getCart(){
     //    return $cart
+    }
+
+    function getMenu($id_toko) {
+        // $sql = "SELECT * FROM menu WHERE list_toko_id_toko=?";
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute([$id]);
+        // $rowCount = $stmt->rowCount();
+        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // if ($rowCount > 0) {
+        //     return $result;
+        // }
     }
 }
 ?>
