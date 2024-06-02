@@ -61,4 +61,14 @@ class Transaksi
         //     $transaction->setStatusPesanan('Proses');
         // }
     }
+
+    function createPesanan() {
+        // $sql = "INSERT INTO detail_transaksi (id_transaksi, kuantitas, subtotalharga, id_menu) VALUES (?, ?, ?, ?)";
+        // $stmt = $this->pdo->prepare($sql);
+        // $stmt->execute([$this->nrp, $msg]);
+
+         // if ($rowCount > 0) {
+        //     return $result;
+        // }
+    }
 }

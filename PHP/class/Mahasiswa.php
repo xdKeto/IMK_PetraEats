@@ -7,27 +7,31 @@ class Mahasiswa{
     private $password;
 
     function setNama($name){
-
+        $this->nama = $name;
     }
 
-    function getNama(){
+    function getNama($nama){
+        // $sql = "SELECT * FROM mahasiswa WHERE email=?";
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute([$this->email]);
+        // $rowCount = $stmt->rowCount();
+        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    }
-    function setEmail($email){
-
-    }
-    function getEmail(){
-
+        // return $result
     }
     function setPassword($pass){
-
+        $this->password = password_hash($pass, PASSWORD_DEFAULT);
     }
-    function verifyPassword($pass){
 
-    }
-    function pesanMakanan($msg){
+    function verifyPassword($email) {
+        // $sql = "SELECT password FROM mahasiswa WHERE email = ?";
+        // $stmt = $this->pdo->prepare($sql);
+        // $stmt->execute([$this->email]); 
+        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        // return password_verify($pass, $result['password']);  
     }
+
 }
 
 ?>
