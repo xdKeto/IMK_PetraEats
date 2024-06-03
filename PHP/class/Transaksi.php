@@ -10,6 +10,7 @@ class Transaksi
     private $buktiBayar;
     private $tanggal;
     private $ID_Toko;
+    private $catatan;
 
     function setStatusPesanan($msg, $id_transaksi)
     {
@@ -33,6 +34,15 @@ class Transaksi
         // $stmt = $pdo->prepare($sql);
         // $stmt->execute([$id_transaksi]);
 
+    }
+
+    function getCatatan($id_transakasi) {
+        // $sql = "SELECT catatan FROM transaksi WHERE id_transaksi=?";  
+        // $stmt = $this->pdo->prepare($sql);
+        // $stmt->execute([$id_transakasi]);
+        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        // return $result;
     }
 
     function getStatusPesanan($id_transaksi)
