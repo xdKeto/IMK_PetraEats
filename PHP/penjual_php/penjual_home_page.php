@@ -4,38 +4,48 @@ include_once "../class/Transaksi.php";
 include_once "../class/DetailTransaksi.php";
 include_once "../class/Menu.php";
 
-function loadListTransaksi()
+function getTransaksi()
 {
     $Transaksi = new Transaksi();
 
     //return [$Transaksi->getListTransaksi()];
 }
-$listDataTransaksi = loadListTransaksi();
+$listDataTransaksi = getTransaksi();
 
 
-function loadDetailTransaksi() {
-    //untuk di modal
-    //id transaksi ngikut dri pesanan yg di klik pesanan yg mna, blm tau cara passing variablenya 🙏
-    $id_transaksi = 1;
-    $DetailTransaksi = new DetailTransaksi();
+function getDetailTransaksi() {
+    //untuk di modal form
+    //$DetailTransaksi = new DetailTransaksi();
 
-    $listDetailTransaksi = $DetailTransaksi->getDetailTransaksi($id_transaksi);
+    //$listDetailTransaksi = $DetailTransaksi->getDetailTransaksi($id_transaksi);
+    
+    //
     //kuantitas, subtotalharga, id_transaksi, id_menu
+    //
 
     //return $DetailTransaksi->getDetailTransaksi($id_transaksi);
 }
-$listDetailTransaksi = loadDetailTransaksi();
+$listDetailTransaksi = getDetailTransaksi();
+
+function getCatatan() {
+    $Catatan = new Transaksi();
+
+    //return $Catatan->getCatatan($id_transaksi);
+}
+$catatan = getCatatan();
 
 
-function loadMenu() {
+function getNamaMenu() {
     //list menu toko nnti di cek saat load di modal sesuai detail transaksi
     $Menu = new Menu();
-    //$listMenu = $Menu->getMenu($SESSION["ID_Toko"]);
-    //id_menu, namamenu, harga, statustersedia, id_toko
     
-    //return $Menu->getMenu($SESSION["ID_Toko"]);
+    //
+    //id_menu, namamenu, harga, statustersedia, id_toko
+    //
+
+    //return $Menu->getNamaMenu($id_menu);
 }
-$listMenu = loadMenu();
+$namaMenu = getNamaMenu();
 
 
 function setStatusPesanan($msg, $id) {
@@ -167,6 +177,7 @@ function setStatusPesanan($msg, $id) {
                         </div>
                         <div class="col-12 row d-flex align-items-center border border-2 rounded-3">
                             <div class=" col-5 row d-flex justify-content-center">
+                                <?php /* <div class="col-12 d-flex justify-content-center fw-bold mb-md-2 mt-1"><?= $transaksi['mahasiswa_nrp'] ?></div> */ ?>
                                 <div class="col-12 d-flex justify-content-center fw-bold mb-md-2 mt-1">C14220123</div>
                                 <div class="col-12 d-flex justify-content-center">
                                     <img src="../../resource/assets/assets_lama/mahasiswa/profile/Ryan@gmail.com.jpg" class=" float-start rounded-2 border border-black" style="max-width: 70%; max-height: 70%;" />
@@ -200,9 +211,7 @@ function setStatusPesanan($msg, $id) {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <?php /* foreach ($listDataTransaksi  as $transaksi): */ ?>
-                    <?php /* <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Pesanan <?= $transaksi['id_transaksi'] ?> </h1>*/ ?>
-                    <?php /* endforeach; */ ?> 
+                    <!-- <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Pesanan <? $listDataTransaksi['id_transaksi'] ?> </h1>*/ ?> -->
                     <h1 class="modal-title fs-3 fw-bold" id="detailPesananLabel">Pesanan 01</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -218,6 +227,18 @@ function setStatusPesanan($msg, $id) {
                                 </tr>
                             </thead>
                             <tbody>
+                                <!-- <?php /* foreach ($listDetailTransaksi  as $detailTransaksi): */ ?>    
+                                <tr>
+                                    <td><?php $namaMenu ?></td>
+                                    <td><?php $detailTransaksi['kuantitas'] ?></td>
+                                    <td><?php $detailTransaksi['subTotalHarga'] ?></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Total:</td>
+                                    <td><?php $listDataTransaksi['totalHarga'] ?></td>
+                                </tr>   
+                                <?php /* endforeach; */ ?>  -->
                                 <tr>
                                     <td>Cookies and Cream</td>
                                     <td>2</td>
@@ -247,6 +268,7 @@ function setStatusPesanan($msg, $id) {
                         </table>
                         <div class="col-12 fw-bold fs-5">Catatan :</div>
                         <div class="col-12">Banyakin esnya ya.</div>
+                        <!-- <div class="col-12"><?php $catatan ?></div> -->
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
@@ -294,8 +316,6 @@ function setStatusPesanan($msg, $id) {
 
         // Call the function to update the currentDate initially
         updateCurrentDate();
-
-
 
         // Confirm Pesanan
         document.getElementById('acceptOrder').addEventListener('click', function() {
