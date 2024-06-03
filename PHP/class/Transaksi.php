@@ -224,13 +224,6 @@ class Transaksi
         // }
     }
 
-    function setCart() {
-        // if (isset($_SESSION['cart'])) {
-        //     return $_SESSION['cart'];
-        // }
-        // return [];
-    }
-
     function confirmTransaksi(){
         
     }

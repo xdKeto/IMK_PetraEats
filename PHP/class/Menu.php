@@ -46,42 +46,6 @@ class Menu {
         // return $result;
     }
 
-    // $cart= []
-    function addToCart($menu_id, $quantity, $price){
-        // global $cart;
-    
-        // $found = false;
-        // for ($i = 0; $i < count($cart); $i++) {
-        //     if ($cart[$i]['menu_id'] == $menu_id) {
-        //         $cart[$i]['quantity'] += $quantity;
-        //         $cart[$i]['price'] += $price;
-        //         $found = true;
-        //         break;
-        //     }
-        // }
-        // if (!$found) {
-        //     $cart[] = [
-        //         'menu_id' => $menu_id,
-        //         'quantity' => $quantity
-        //         'price' => $price
-        //     ];
-    }
-
-
-    function checkCart(){
-        // global $cart;
-    
-        // if (!empty($cart)) {
-        //     return true;
-        // } else {
-        //     return false;
-        // }
-    }
-
-    function getCart(){
-    //    return $cart
-    }
-
     
 }
 ?>

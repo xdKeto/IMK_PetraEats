@@ -249,6 +249,7 @@ session_start();
       const cartAler2 = document.getElementById("cart-alert-bottom-left");
       const cekKeranjang = document.getElementById("cekKeranjang");
 
+      // addToCart()
       container.addEventListener("click", (event) => {
         const target = event.target;
 
@@ -286,9 +287,9 @@ session_start();
         }
       }
 
-      // Add click event listener for SweetAlert2 confirmation
+      // checkCart()
       cekKeranjang.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent the default anchor behavior
+        event.preventDefault();
 
         const counters = document.querySelectorAll(".food-counter");
         let hasItems = false;
@@ -317,11 +318,11 @@ session_start();
             cancelButtonColor: "#bbbbbb",
             confirmButtonText: "Sudah",
             cancelButtonText: "Tambah lagi deh",
-            reverseButtons: true, // This option moves the confirm button to the right
+            reverseButtons: true, 
           }).then((result) => {
             if (result.isConfirmed) {
               setTimeout(function() {
-
+                // getCart()
                 document.getElementById('form-counter-1').value = document.getElementById('counter-1').textContent;
                 document.getElementById('form-counter-2').value = document.getElementById('counter-2').textContent;
                 document.getElementById('form-counter-3').value = document.getElementById('counter-3').textContent;
@@ -338,7 +339,7 @@ session_start();
         }
       });
 
-      // Function to show/hide the button based on screen size
+      
       function handleResize() {
         if (window.innerWidth <= 991) {
           cekKeranjang.style.display = "block";
