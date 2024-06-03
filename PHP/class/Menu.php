@@ -10,10 +10,10 @@ class Menu {
         $this->namaMenu = $name;
     }
 
-    function getNamaMenu(){
-        // $sql = "SELECT * FROM menu WHERE namamenu=?";
+    function getNamaMenu($id_Menu){
+        // $sql = "SELECT namamenu FROM menu WHERE id_menu=?";
         // $stmt = $this->pdo->prepare($sql);
-        // $stmt->execute([$this->namaMenu]);
+        // $stmt->execute([$id_menu]);
         // $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
         // return $result;
@@ -82,16 +82,6 @@ class Menu {
     //    return $cart
     }
 
-    function getMenu($id_toko) {
-        // $sql = "SELECT * FROM menu WHERE list_toko_id_toko=?";
-        // $stmt = $pdo->prepare($sql);
-        // $stmt->execute([$id]);
-        // $rowCount = $stmt->rowCount();
-        // $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        // if ($rowCount > 0) {
-        //     return $result;
-        // }
-    }
+    
 }
 ?>
