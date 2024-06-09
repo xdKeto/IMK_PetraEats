@@ -54,10 +54,13 @@ session_start();
       <div class="col-lg-6 col-12">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav col-12 row d-flex align-items-center ms-sm-0 ms-2">
-            <li class="nav-item col-lg-8 col-3 align-items-center d-flex justify-content-end mt-lg-0 mt-4 shake">
+            <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4 shake">
+              <a href="mahasiswa_landing_page.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4 shake">
               <a href="mahasiswa_riwayat.php" class="navbar-brand nav-link mb-0 fs-5" style="font-family: var(--font-family-1)" id="navitem"><i class="fa fa-history"></i> Riwayat</a>
             </li>
-            <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4 ">
+            <li class="nav-item col-lg-4 col-3 align-items-center d-flex justify-content-center mt-lg-0 mt-4">
               <div class="dropdown">
                 <div class="navbar-brand nav-link mb-0 fs-5 dropbtn d-flex justify-content-center shake" style="font-family: var(--font-family-1)" id="navitem" onclick="logoutDropdown()">
                   <img class="rounded-circle dropbtn" style="max-width: 55px" src="../../resource/assets/assets_lama/mahasiswa/profile/Default.jpg" style="z-index: 2" />
@@ -238,10 +241,10 @@ session_start();
     document.addEventListener("DOMContentLoaded", () => {
       const container = document.querySelector(".container");
       const cartAlert = document.getElementById("cart-alert");
-      const cartAler2 = document.getElementById("cart-alert-bottom-left");
+      const cartAlert2 = document.getElementById("cart-alert-bottom-left");
       const cekKeranjang = document.getElementById("cekKeranjang");
 
-      // addToCart()
+      // Add event listener to container for button clicks
       container.addEventListener("click", (event) => {
         const target = event.target;
 
@@ -270,16 +273,17 @@ session_start();
           }
         });
 
+        console.log("Update Cart Alert: ", hasItems);
         if (hasItems) {
-          cartAlert.style.display = "block";
-          cartAler2.style.display = "block";
+          if (cartAlert) cartAlert.style.display = "block";
+          if (cartAlert2) cartAlert2.style.display = "block";
         } else {
-          cartAlert.style.display = "none";
-          cartAler2.style.display = "none";
+          if (cartAlert) cartAlert.style.display = "none";
+          if (cartAlert2) cartAlert2.style.display = "none";
         }
       }
 
-      // checkCart()
+      // Check cart before navigating
       cekKeranjang.addEventListener("click", (event) => {
         event.preventDefault();
 
@@ -310,11 +314,10 @@ session_start();
             cancelButtonColor: "#bbbbbb",
             confirmButtonText: "Sudah",
             cancelButtonText: "Tambah lagi deh",
-            reverseButtons: true, 
+            reverseButtons: true,
           }).then((result) => {
             if (result.isConfirmed) {
               setTimeout(function() {
-                // getCart()
                 document.getElementById('form-counter-1').value = document.getElementById('counter-1').textContent;
                 document.getElementById('form-counter-2').value = document.getElementById('counter-2').textContent;
                 document.getElementById('form-counter-3').value = document.getElementById('counter-3').textContent;
@@ -323,28 +326,29 @@ session_start();
                 document.getElementById('form-counter-6').value = document.getElementById('counter-6').textContent;
 
                 document.getElementById('dataForm').submit();
-
               }, 300);
-
             }
           });
         }
       });
 
-      
-      function handleResize() {
-        if (window.innerWidth <= 991) {
-          cekKeranjang.style.display = "block";
-        } else {
-          cekKeranjang.style.display = "none";
-        }
-      }
+      // Initial call to set the cart alert visibility
+      updateCartAlert();
 
-      // Initial check
-      handleResize();
+
+      // function handleResize() {
+      //   if (window.innerWidth <= 991) {
+      //     cekKeranjang.style.display = "block";
+      //   } else {
+      //     cekKeranjang.style.display = "none";
+      //   }
+      // }
+
+      // // Initial check
+      // handleResize();
 
       // Listen for window resize events
-      window.addEventListener("resize", handleResize);
+      //window.addEventListener("resize", handleResize);
     });
   </script>
   <script type="text/javascript" src="../../resource/js/mahasiswa_login.js"></script>
