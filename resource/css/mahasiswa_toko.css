@@ -1,3 +1,5 @@
+
+
 .nama-toko {
   color: #003662;
 }
@@ -32,9 +34,9 @@
   width: 7rem;
 }
 
-/* Hide the button by default */
 #cekKeranjang {
-  display: none;
+  display: block;
+  
 }
 
 .floating-button {
@@ -59,13 +61,6 @@
 .floating-button .btn-keranjang:hover {
   background-color: #003662;
   text-decoration: none;
-}
-
-/* Responsive button keranjang saat navbar berubah */
-@media (max-width: 991px) {
-  .btn-keranjang {
-    display: block;
-  }
 }
 
 /* Responsive */
