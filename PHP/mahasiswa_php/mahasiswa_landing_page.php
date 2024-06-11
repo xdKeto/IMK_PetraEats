@@ -79,11 +79,11 @@ session_start();
   <div class="container mb-5" style="margin-top: 10rem">
     <div class="row d-flex justify-content-between">
       <div class="col-6">
-        <div class="fw-bold" style="font-size: 1.2rem">Hai C14220331 lapar ya,<br />yuk pesan makanan favoritmu !</div>
-        <div class="fw-bolder mt-3 mb-3" style="font-size: 2.5rem">
+        <div class="fw-bold" style="font-size: 2rem">Hai C14220331 lapar ya,<br />yuk pesan makanan favoritmu !</div>
+        <div class="fw-bolder mt-3 mb-3" style="font-size: 4.5rem">
           <p class="fw-bold" id="jam"></p>
         </div>
-        <div class="fw-bold" style="font-size: 1.2rem">Jangan lupa kelas !</div>
+        <div class="fw-bold" style="font-size: 2rem">Jangan lupa kelas !</div>
       </div>
       <div class="col-6 d-flex justify-content-end" style="padding-right: 30px; padding-left: 25px">
         <div class="row bg-light align-items-center rounded-3 shadow">
